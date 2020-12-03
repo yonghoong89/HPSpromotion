@@ -1,0 +1,1387 @@
+@charset "UTF-8";
+
+
+/* ---------------------------------------------------------------
+공통,기본
+--------------------------------------------------------------- */
+/* hidden object */
+.hidden-obj {overflow:hidden;position:absolute;width:1px;height:1px;padding:0;margin:-1px;clip:rect(0, 0, 0, 0);border:0;}
+.blind {overflow:hidden;position:absolute;width:1px;height:1px;padding:0;margin:-1px;clip:rect(0, 0, 0, 0);border:0;} /* 2019-12-03 : 추가 */
+.hidden-focus{outline:0;} /* 2019-12-10 : 추가 */
+
+/* 포인트컬러 */
+.txt1 {color:#008800 !important;}
+.txt2 {color:#e60617 !important;}
+.txt3 {color:#0198ff !important;}
+.txt4 {color:#333 !important;}
+.txt5 {color:#53af1e !important;}
+.txt6 {color:#d1d1d1 !important;}
+.txt8 {color:#ed1c24 !important;}
+.txt9 {color:#666 !important;}
+.txt-c-888 {color: #888;}
+.txt-c-333 {color: #333;}
+.new-txt1 {color:#111 !important;}/* 2016-12-05 : 추가 */
+.txt-red {color:#ed1c24!important;}
+.txt-yellow {color:#ffea00!important;}
+.txt-gray {color:#888!important;}
+.txt-dgray {color:#666!important;}
+.txt-black {color:#333!important;}
+.terms-txt-ty1{ font-size:12px !important; font-weight:bold !important; text-decoration:underline; }
+.terms-txt-ty2{ font-size:13px !important; font-weight:bold !important; text-decoration:underline; }
+.terms-txt-ty3{ font-size:14px !important; font-weight:bold !important; text-decoration:underline; }
+
+/* text size */
+.txt-fs-12 { font-size: 12px !important;}
+/* 2019-05-28 : 추가 */
+.txt-fs-13 { font-size: 13px !important;}
+.txt-fs-14 { font-size: 14px !important;}
+.txt-fs-15 { font-size: 15px !important;}
+.txt-fs-16 { font-size: 16px !important;}
+.txt-fs-18 { font-size: 18px !important;}
+/* //2019-05-28 : 추가 */
+
+/* 정렬*/
+.text-c {text-align:center !important;}
+.text-l {text-align:left !important;}
+.text-s {font-size:10px;}
+
+.tb-info tr.delete {text-decoration:line-through;}
+
+/*정렬클래스*/
+.of {overflow:hidden !important; width:100%;}
+.fl {float:left !important;}
+.fr {float:right !important;}
+.cl {clear:both !important;}
+.al {text-align:left !important;}
+.ar {text-align:right !important;}
+.ac {text-align:center !important;}
+.at {vertical-align:top !important;}
+.am {vertical-align:middle !important;}
+.ab {vertical-align:bottom !important;}
+.dis_b {display:block;}
+.dis_n {display:none;}
+.f-normal{font-weight: normal !important;}
+
+/*마진,패딩 클래스*/
+.mg0{margin:0!important;}
+.pd0{padding:0!important;}
+
+.mt0 {margin-top:0 !important;}
+.mt05{margin-top:5px !important;}
+.mt10{margin-top:10px !important;}
+.mt15{margin-top:15px !important;}
+.mt16{margin-top:16px !important;} /* 2020-03-26 : 추가 */
+.mt20{margin-top:20px !important;}
+.mt25{margin-top:25px !important;}
+.mt30{margin-top:30px !important;}
+.mt35{margin-top:35px !important;}
+.mt40{margin-top:40px !important;}
+.mt45{margin-top:45px !important;}
+.mt50{margin-top:50px !important;}
+
+.mb0{margin-bottom:0px !important;}
+.mb05{margin-bottom:5px !important;}
+.mb10{margin-bottom:10px !important;}
+.mb15{margin-bottom:15px !important;}
+.mb20{margin-bottom:20px !important;}
+.mb25{margin-bottom:25px !important;}
+.mb30{margin-bottom:30px !important;}
+.mb35{margin-bottom:35px !important;}
+.mb40{margin-bottom:40px !important;}
+.mb45{margin-bottom:45px !important;}
+.mb50{margin-bottom:50px !important;}
+.mb55{margin-bottom:55px !important;}
+
+.ml0 {margin-left:0 !important;}
+.ml05{margin-left:5px !important;}
+.ml10{margin-left:10px !important;}
+.ml15{margin-left:15px !important;}
+.ml20{margin-left:20px !important;}
+.ml25{margin-left:25px !important;}
+.ml30{margin-left:30px !important;}
+.ml35{margin-left:35px !important;}
+.ml40{margin-left:40px !important;}
+.ml45{margin-left:45px !important;}
+
+.mr0 {margin-right:0 !important;}
+.mr05{margin-right:5px !important;}
+.mr10{margin-right:10px !important;}
+.mr15{margin-right:15px !important;}
+.mr20{margin-right:20px !important;}
+.mr25{margin-right:25px !important;}
+.mr30{margin-right:30px !important;}
+.mr35{margin-right:35px !important;}
+.mr40{margin-right:40px !important;}
+.mr45{margin-right:45px !important;}
+
+.pt0 {padding-top:0 !important;}
+.pt05{padding-top:5px !important;}
+.pt10{padding-top:10px !important;}
+.pt15{padding-top:15px !important;}
+.pt20{padding-top:20px !important;}
+.pt25{padding-top:25px !important;}
+.pt30{padding-top:30px !important;}
+.pt35{padding-top:35px !important;}
+.pt40{padding-top:40px !important;}
+.pt45{padding-top:45px !important;}
+
+.pb0 {padding-bottom:0 !important;}
+.pb05{padding-bottom:5px !important;}
+.pb10{padding-bottom:10px !important;}
+.pb15{padding-bottom:15px !important;}
+.pb20{padding-bottom:20px !important;}
+.pb25{padding-bottom:25px !important;}
+.pb30{padding-bottom:30px !important;}
+.pb35{padding-bottom:35px !important;}
+.pb40{padding-bottom:40px !important;}
+.pb45{padding-bottom:45px !important;}
+
+.pl0 {padding-left:0px !important;}
+.pl05 {padding-left:5px !important;}
+.pl10{padding-left:10px !important;}
+.pl15{padding-left:15px !important;}
+.pl20{padding-left:20px !important;}
+.pl25{padding-left:25px !important;}
+.pl30{padding-left:30px !important;}
+.pl35{padding-left:35px !important;}
+.pl40{padding-left:40px !important;}
+.pl45{padding-left:45px !important;}
+.pl50{padding-left:50px !important;}
+.pl55{padding-left:55px !important;}
+.pl60{padding-left:60px !important;}
+.pl65{padding-left:65px !important;}
+.pl70{padding-left:70px !important;}
+.pl75{padding-left:75px !important;}
+.pl85{padding-left:85px !important;}
+.pl95{padding-left:95px !important;}
+
+.pr0 {padding-right:0 !important;}
+.pr05{padding-right:5px !important;}
+.pr10{padding-right:10px !important;}
+.pr15{padding-right:15px !important;}
+.pr20{padding-right:20px !important;}
+.pr25{padding-right:25px !important;}
+.pr30{padding-right:30px !important;}
+.pr35{padding-right:35px !important;}
+.pr40{padding-right:40px !important;}
+.pr45{padding-right:45px !important;}
+
+.bd0{border:0!important;}
+
+.w100{width:100%!important;}
+
+/* clearfix */
+.clearfix:before{content:'';display:block;clear:both;}
+.clearfix:after{content:'';display:block;clear:both;}
+
+/* display */
+.display-block{display:block!important;}
+
+/* hideen-obj */
+.hidden-obj{display:none!important;}
+
+/* 아이콘1 : 행사아이콘 40*40  */
+.icon-ty1 {position:relative;overflow:hidden;float:left;display:inline-block;margin-right:5px;width:30px;height:30px;vertical-align:top;text-indent:-9999px;}/* 2015-11-02 : 수정 */
+.icon-ty1:after,
+.icon-ty5:after {position:absolute;left:0;right:0;top:0;bottom:0;background:url('../img/common/icon-set.png') 0 0 no-repeat;background-size:450px auto;content:'';background-position:1000px 0;}
+/* 2016-05-26 : 수정 // */
+.icon-ty1.icon1:after,
+.icon-ty5.icon1:after {background-position:0 0;} /* 1+1 */
+.icon-ty1.icon2:after,
+.icon-ty5.icon2:after {background-position:-30px 0;} /* 2+1 */
+.icon-ty1.icon3:after,
+.icon-ty5.icon3:after {background-position:-60px 0;} /* 3+1 */
+.icon-ty1.icon4:after,
+.icon-ty5.icon4:after {background-position:-90px 0;} /* 4+1 */
+.icon-ty1.icon5:after,
+.icon-ty5.icon5:after {background-position:-120px 0;} /* 5+1 */
+.icon-ty1.icon6:after,
+.icon-ty5.icon6:after {background-position:-150px 0;} /* 6+1 */
+.icon-ty1.icon7:after,
+.icon-ty5.icon7:after {background-position:-180px 0;} /* 7+1 */
+.icon-ty1.icon8:after,
+.icon-ty5.icon8:after {background-position:-210px 0;} /* 8+1 */
+.icon-ty1.icon9:after,
+.icon-ty5.icon9:after {background-position:-240px 0;} /* 9+1 */
+.icon-ty1.icon10:after,
+.icon-ty5.icon10:after {background-position:-270px 0;} /* 10+1 */
+.icon-ty1.icon11:after,
+.icon-ty5.icon11:after {background-position:0 -30px;} /* 전단상품 */
+.icon-ty1.icon12:after,
+.icon-ty5.icon12:after {background-position:-30px -30px;} /* 행사상품 */
+.icon-ty1.icon14:after,
+.icon-ty5.icon14:after {background-position:-90px -30px;} /* 덤 */
+.icon-ty1.icon15:after,
+.icon-ty5.icon15:after {background-position:-120px -30px;} /* 추가증정 */
+.icon-ty1.icon16:after,
+.icon-ty5.icon16:after {background-position:-150px -30px;} /* 함께할인 */
+.icon-ty1.icon17:after,
+.icon-ty5.icon17:after {background-position:-180px -30px;} /* 5천원 상품권증정 */
+.icon-ty1.icon18:after,
+.icon-ty5.icon18:after {background-position:-210px -30px;} /* 1만원 상품권증정 */
+.icon-ty1.icon19:after,
+.icon-ty5.icon19:after {background-position:-240px -30px;} /* 균일가 */
+.icon-ty1.icon20:after,
+.icon-ty5.icon20:after {background-position:-270px -30px;} /* 포인트 적립 */
+.icon-ty1.icon21:after,
+.icon-ty5.icon21:after {background-position:-300px -30px;} /* 포인트 할인 */
+.visual-img .icon-ty1.icon23, .visual-img .icon-ty1.icon24, .visual-img .icon-ty1.icon25, .visual-img .icon-ty1.icon26, .visual-img .icon-ty1.icon27, .visual-img .icon-ty1.icon28, .visual-img .icon-ty1.icon29, .visual-img .icon-ty1.icon30, .visual-img .icon-ty1.icon31, .visual-img .icon-ty1.icon32, .visual-img .icon-ty1.icon33, .visual-img .icon-ty1.icon43, .visual-img .icon-ty1.icon44, .visual-img .icon-ty1.icon45, .visual-img .icon-ty1.icon46, .visual-img .icon-ty1.icon47, .visual-img .icon-ty1.icon48, .visual-img .icon-ty1.icon49, .visual-img .icon-ty1.icon50, .visual-img .icon-ty1.icon51, .visual-img .icon-ty1.icon52, .visual-img .icon-ty1.icon53, .visual-img .icon-ty1.icon54, .visual-img .icon-ty1.icon55, .visual-img .icon-ty1.icon56, .visual-img .icon-ty1.icon57, .visual-img .icon-ty1.icon58, .visual-img .icon-ty1.icon59, .visual-img .icon-ty1.icon60, .visual-img .icon-ty1.icon61, .visual-img .icon-ty1.icon62, .visual-img .icon-ty1.icon63, .visual-img .icon-ty1.icon64, .visual-img .icon-ty1.icon65, .visual-img .icon-ty1.icon66, .visual-img .icon-ty1.icon67, .visual-img .icon-ty1.icon68, .visual-img .icon-ty1.icon69, .visual-img .icon-ty1.icon70, .visual-img .icon-ty1.icon71, .visual-img .icon-ty1.icon72, .visual-img .icon-ty1.icon73,
+.product-ty1 .icon-ty1.icon23, .product-ty1 .icon-ty1.icon24, .product-ty1 .icon-ty1.icon25, .product-ty1 .icon-ty1.icon26, .product-ty1 .icon-ty1.icon27, .product-ty1 .icon-ty1.icon28, .product-ty1 .icon-ty1.icon29, .product-ty1 .icon-ty1.icon30, .product-ty1 .icon-ty1.icon31, .product-ty1 .icon-ty1.icon32, .product-ty1 .icon-ty1.icon33, .product-ty1 .icon-ty1.icon43, .product-ty1 .icon-ty1.icon44, .product-ty1 .icon-ty1.icon45, .product-ty1 .icon-ty1.icon46, .product-ty1 .icon-ty1.icon47, .product-ty1 .icon-ty1.icon48, .product-ty1 .icon-ty1.icon49, .product-ty1 .icon-ty1.icon50, .product-ty1 .icon-ty1.icon51, .product-ty1 .icon-ty1.icon52, .product-ty1 .icon-ty1.icon53, .product-ty1 .icon-ty1.icon54, .product-ty1 .icon-ty1.icon55, .product-ty1 .icon-ty1.icon56, .product-ty1 .icon-ty1.icon57, .product-ty1 .icon-ty1.icon58, .product-ty1 .icon-ty1.icon59, .product-ty1 .icon-ty1.icon60, .product-ty1 .icon-ty1.icon61, .product-ty1 .icon-ty1.icon62, .product-ty1 .icon-ty1.icon63, .product-ty1 .icon-ty1.icon64, .product-ty1 .icon-ty1.icon65, .product-ty1 .icon-ty1.icon66, .product-ty1 .icon-ty1.icon67, .product-ty1 .icon-ty1.icon68, .product-ty1 .icon-ty1.icon69, .product-ty1 .icon-ty1.icon70, .product-ty1 .icon-ty1.icon71, .product-ty1 .icon-ty1.icon72, .product-ty1 .icon-ty1.icon73 {margin-left:0 !important;}
+.icon-ty1.icon22:after,
+.icon-ty5.icon22:after {background-position:-259px -193px;} /* 3만원 할인 */
+.icon-ty1.icon23:after,
+.icon-ty5.icon23:after {background-position:0 -91px;} /* 1천원 할인 */
+.icon-ty1.icon24:after,
+.icon-ty5.icon24:after {background-position:-37px -91px;} /* 2천원 할인 */
+.icon-ty1.icon25:after,
+.icon-ty5.icon25:after {background-position:-74px -91px;} /* 3천원 할인 */
+.icon-ty1.icon26:after,
+.icon-ty5.icon26:after {background-position:-111px -91px;} /* 4천원 할인 */
+.icon-ty1.icon27:after,
+.icon-ty5.icon27:after {background-position:-148px -91px;} /* 5천원 할인 */
+.icon-ty1.icon28:after,
+.icon-ty5.icon28:after {background-position:-407px -91px;} /* 10% 할인 */
+.icon-ty1.icon29:after,
+.icon-ty5.icon29:after {background-position:-37px -125px;} /* 20% 할인 */
+.icon-ty1.icon30:after,
+.icon-ty5.icon30:after {background-position:-111px -125px;} /* 30% 할인 */
+.icon-ty1.icon31:after,
+.icon-ty5.icon31:after {background-position:-185px -125px;} /* 40% 할인 */
+.icon-ty1.icon32:after,
+.icon-ty5.icon32:after {background-position:-259px -125px;} /* 50% 할인 */
+.icon-ty1.icon33:after,
+.icon-ty5.icon33:after {background-position:-296px -125px;} /* 60% 할인 */
+.icon-ty1.icon36:after,
+.icon-ty5.icon36:after {background-position:0 -60px;} /* only 온라인 */
+.icon-ty1.icon37:after,
+.icon-ty5.icon37:after {background-position:-30px -60px;} /* 3천원 상품권 증정 */
+.icon-ty1.icon38:after,
+.icon-ty5.icon38:after {background-position:-60px -60px;} /* 상품권 증정 */
+.icon-ty1.icon39:after,
+.icon-ty5.icon39:after {background-position:-90px -60px;} /* HIT */
+.icon-ty1.icon40:after,
+.icon-ty5.icon40:after {background-position:-120px -60px;} /* HOT */
+.icon-ty1.icon41:after,
+.icon-ty5.icon41:after {background-position:-150px -60px;} /* 기획상품 */
+.icon-ty1.icon42:after,
+.icon-ty5.icon42:after {background-position:-300px -60px;} /* 특가 */
+.icon-ty1.icon43:after,
+.icon-ty5.icon43:after {background-position:-185px -91px;} /* 6천원 할인 */
+.icon-ty1.icon44:after,
+.icon-ty5.icon44:after {background-position:-222px -91px;} /* 7천원 할인 */
+.icon-ty1.icon45:after,
+.icon-ty5.icon45:after {background-position:-259px -91px;} /* 8천원 할인 */
+.icon-ty1.icon46:after,
+.icon-ty5.icon46:after {background-position:-296px -91px;} /* 9천원 할인 */
+.icon-ty1.icon47:after,
+.icon-ty5.icon47:after {background-position:-333px -91px;} /* 1만원 할인 */
+.icon-ty1.icon48:after,
+.icon-ty5.icon48:after {background-position:-370px -91px;} /* 2만원 할인 */
+.icon-ty1.icon49:after,
+.icon-ty5.icon49:after {background-position:0 -125px;} /* 15% 할인 */
+.icon-ty1.icon50:after,
+.icon-ty5.icon50:after {background-position:-74px -125px;} /* 25% 할인 */
+.icon-ty1.icon51:after,
+.icon-ty5.icon51:after {background-position:-148px -125px;} /* 35% 할인 */
+.icon-ty1.icon52:after,
+.icon-ty5.icon52:after {background-position:-222px -125px;} /* 45% 할인 */
+.icon-ty1.icon53:after,
+.icon-ty5.icon53:after {background-position:-333px -125px;} /* 65% 할인 */
+.icon-ty1.icon54:after,
+.icon-ty5.icon54:after {background-position:-370px -125px;} /* 70% 할인 */
+.icon-ty1.icon55:after,
+.icon-ty5.icon55:after {background-position:-407px -125px;} /* 75% 할인 */
+.icon-ty1.icon56:after,
+.icon-ty5.icon56:after {background-position:-74px -193px;} /* 80% 할인 */
+.icon-ty1.icon57:after,
+.icon-ty5.icon57:after {background-position:-111px -193px;} /* 85% 할인*/
+.icon-ty1.icon58:after,
+.icon-ty5.icon58:after {background-position:0 -159px;} /* 2개 구매시 20% 할인 */
+.icon-ty1.icon59:after,
+.icon-ty5.icon59:after {background-position:-37px -159px;} /* 2개 구매시 30% 할인 */
+.icon-ty1.icon60:after,
+.icon-ty5.icon60:after {background-position:-74px -159px;} /* 2개 구매시 50% 할인 */
+.icon-ty1.icon61:after,
+.icon-ty5.icon61:after {background-position:-111px -159px;} /* 2개 구매시 1만원 */
+.icon-ty1.icon62:after,
+.icon-ty5.icon62:after {background-position:-148px -193px;} /* 3개 구매시 1만원 */
+.icon-ty1.icon63:after,
+.icon-ty5.icon63:after {background-position:-148px -159px;} /* 3개 구매시 2천원 */
+.icon-ty1.icon64:after,
+.icon-ty5.icon64:after {background-position:-185px -159px;} /* 3개 구매시 5천원 */
+.icon-ty1.icon65:after,
+.icon-ty5.icon65:after {background-position:-222px -159px;} /* 2개 구매시 1천원 할인 */
+.icon-ty1.icon66:after,
+.icon-ty5.icon66:after {background-position:-259px -159px;} /* 2개 구매시 2천원 할인 */
+.icon-ty1.icon67:after,
+.icon-ty5.icon67:after {background-position:-296px -159px;} /* 2개 구매시 3천원 할인 */
+.icon-ty1.icon68:after,
+.icon-ty5.icon68:after {background-position:-333px -159px;} /* 2개 구매시 4천원 할인 */
+.icon-ty1.icon69:after,
+.icon-ty5.icon69:after {background-position:-370px -159px;} /* 2개 구매시 5천원 할인 */
+.icon-ty1.icon70:after,
+.icon-ty5.icon70:after {background-position:-407px -159px;} /* 2개 구매시 6천원 할인 */
+.icon-ty1.icon71:after,
+.icon-ty5.icon71:after {background-position:-185px -193px;} /* 2개 구매시 7천원 할인 */
+.icon-ty1.icon72:after,
+.icon-ty5.icon72:after {background-position:0 -193px;} /* 2개 구매시 1만원 할인 */
+.icon-ty1.icon73:after,
+.icon-ty5.icon73:after {background-position:-37px -193px;} /* 5개 구매시 1천원 할인 */
+.icon-ty1.icon74:after,
+.icon-ty5.icon74:after {background-position:-180px -60px;} /* 사은품 증정 */
+.icon-ty1.icon75:after,
+.icon-ty5.icon75:after {background-position:-210px -60px;} /* 1천원 */
+.icon-ty1.icon76:after,
+.icon-ty5.icon76:after {background-position:-240px -60px;} /* 2천원 */
+.icon-ty1.icon77:after,
+.icon-ty5.icon77:after {background-position:-270px -60px;} /* 3천원 */
+.icon-ty1.icon78:after,
+.icon-ty5.icon78:after {background-position:-330px -60px;} /* NEW 신상품 */
+.icon-ty1.icon79:after,
+.icon-ty5.icon79:after {background-position:-330px -30px;} /* 택배상품 아이콘 */
+.icon-ty1.icon90:after,
+.icon-ty5.icon90:after {background-position:-335px -26px;} /* num 천원 할인*/ /* 2017-06-08: 추가  */
+/* 2016-07-15 : 추가 // */
+/* 2016-11-23 : 수정 // */
+.icon-ty1.icon100:after,
+.icon-ty5.icon100:after {background-position:-407px -60px;} /* MD추천 */ /* 2016-09-29 : 수정 */
+.icon-ty1.icon101:after,
+.icon-ty5.icon101:after {background-position:-370px -60px;} /* 적립쿠폰 */ /* 2016-09-29 : 수정 */
+
+.icon-ty1.icon82:after,
+.icon-ty5.icon82:after {background-position:-296px -193px;} /* 2016-11-10 : 2개구매시 10% 할인 */
+.icon-ty1.icon83:after,
+.icon-ty5.icon83:after {background-position:-333px -193px;}/* 2016-11-10 : 2개구매시 15% 할인 */
+.icon-ty1.icon84:after,
+.icon-ty5.icon84:after {background-position:-370px -193px;}/* 2016-11-10 : 2개구매시 40% 할인 */
+.icon-ty1.icon85:after,
+.icon-ty5.icon85:after {background-position:-407px -193px;}/* 2016-11-10 : 2개구매시 8천원 할인 */
+/* // 2016-11-23 : 수정 */
+/* // 2016-07-15 : 추가  */
+/* 2016-05-26 : 삭제 // */
+/*
+.icon-ty1.icon82,
+.icon-ty5.icon82 {float:right;margin-right:0;}
+.icon-ty1.icon82:after,
+.icon-ty5.icon82:after {background-position:-330px -30px;} /* 브랜드 할인
+*/
+/* // 2016-05-26 : 삭제 */
+/* // 2016-05-26 : 수정 */
+/* 2015-06-05 아이콘1 할인율 텍스트로 수정 start */
+.iconstxt .icon-ty5 span:first-child,
+.iconstxt .icon-ty1 span:first-child {position:absolute;top:6px;right:10px;z-index:10;font-size:14px;letter-spacing:-0.25px;color:#fff;text-indent:0;font-weight:bold;line-height:1;} /* 2015-11-02 : 수정 */ /* 2016-06-02 : 수정 */
+.iconstxt .icon-ty5 span.disc:first-child,
+.iconstxt .icon-ty1 span.disc:first-child{ top:5px; left:4px; }/* 2017-06-08 : 추가 : 할인금액 위치조절 */
+.iconstxt .icon-ty5.icon32::after,
+.iconstxt .icon-ty1.icon32::after {background-position:-222px -193px;}
+/* 2015-06-05 아이콘1 할인율 텍스트로 수정 end */
+/* 2016-05-26 : 수정 */
+.icon-ty4 {position:relative;overflow:hidden;display:inline-block;width:20px;height:12px;vertical-align:top;text-indent:-9999px;}
+.icon-ty4:after {position:absolute;left:0;right:0;top:0;bottom:0;background:url('../img/common/icon-set3.png') 0 0 no-repeat;background-size:450px auto;content:'';}
+.icon-ty4.icon14 {width:15px !important;}
+.icon-ty4.icon79 {width:19px !important;}
+.icon-ty4.icon42, .icon-ty4.icon75 {width:20px !important;}
+.icon-ty4.icon39 {width:21px !important;}
+.icon-ty4.icon40 {width:23px !important;}
+.icon-ty4.icon10, .icon-ty4.icon80 {width:24px !important;}
+.icon-ty4.icon19, .icon-ty4.icon76, .icon-ty4.icon77 {width:25px !important;}
+/* 2018-12-05 : 수정 */
+.icon-ty4.icon11, .icon-ty4.icon12, .icon-ty4.icon15, .icon-ty4.icon16, .icon-ty4.icon41, .icon-ty4.icon81, .icon-ty4.icon89 {width:32px !important;}
+.icon-ty4.icon28, .icon-ty4.icon29, .icon-ty4.icon30, .icon-ty4.icon31, .icon-ty4.icon32, .icon-ty4.icon33, .icon-ty4.icon49, .icon-ty4.icon50, .icon-ty4.icon51, .icon-ty4.icon52, .icon-ty4.icon53, .icon-ty4.icon54, .icon-ty4.icon55, .icon-ty4.icon56, .icon-ty4.icon57 {width:34px !important;}
+.icon-ty4.icon22, .icon-ty4.icon23, .icon-ty4.icon24, .icon-ty4.icon25, .icon-ty4.icon26, .icon-ty4.icon27, .icon-ty4.icon43, .icon-ty4.icon44, .icon-ty4.icon45, .icon-ty4.icon46, .icon-ty4.icon47, .icon-ty4.icon48 {width:36px !important;}
+/* //2018-12-05 : 수정 */
+.icon-ty4.icon20, .icon-ty4.icon21, .icon-ty4.icon38, .icon-ty4.icon74 {width:38px !important;}
+.icon-ty4.icon78, .icon-ty4.icon79 {width:44px !important;}
+.icon-ty4.icon36 {width:47px !important;}
+.icon-ty4.icon61, .icon-ty4.icon62, .icon-ty4.icon63, .icon-ty4.icon64 {width:54px !important;}
+.icon-ty4.icon17, .icon-ty4.icon18, .icon-ty4.icon37 {width:58px !important;}
+.icon-ty4.icon83 {width:64px !important;} /* 2016-11-23 : 수정 */
+.icon-ty4.icon82 {width:65px !important;} /* 2016-11-23 : 수정 */
+.icon-ty4.icon58, .icon-ty4.icon59, .icon-ty4.icon60, .icon-ty4.icon84 {width:66px !important;} /* 2016-11-21 : 수정 */
+.icon-ty4.icon65, .icon-ty4.icon66, .icon-ty4.icon67, .icon-ty4.icon68, .icon-ty4.icon69, .icon-ty4.icon70, .icon-ty4.icon71, .icon-ty4.icon72, .icon-ty4.icon73, .icon-ty4.icon85 {width:68px !important;} /* 2016-11-23 : 수정 */
+.icon-ty4.icon1:after {background-position:0 0;} /* 1+1 */
+.icon-ty4.icon2:after {background-position:-24px 0;} /* 2+1 */
+.icon-ty4.icon3:after {background-position:-48px 0;} /* 3+1 */
+.icon-ty4.icon4:after {background-position:-72px 0;} /* 4+1 */
+.icon-ty4.icon5:after {background-position:-96px 0;} /* 5+1 */
+.icon-ty4.icon6:after {background-position:-120px 0;} /* 6+1 */
+.icon-ty4.icon7:after {background-position:-144px 0;} /* 7+1 */
+.icon-ty4.icon8:after {background-position:-168px 0;} /* 8+1 */
+.icon-ty4.icon9:after {background-position:-192px 0;} /* 9+1 */
+.icon-ty4.icon10:after {background-position:-216px 0;} /* 10+1 */
+.icon-ty4.icon11:after {background-position:0 -14px;} /* 전단상품 */
+.icon-ty4.icon12:after {background-position:-34px -14px;} /* 행사상품 */
+.icon-ty4.icon14:after {background-position:-347px -98px;} /* 덤 */
+.icon-ty4.icon15:after {background-position:-68px -14px;} /* 추가증정 */
+.icon-ty4.icon16:after {background-position:-102px -14px;} /* 함께할인 */
+.icon-ty4.icon17:after {background-position:-136px -14px;} /* 5천원 상품권증정 */
+.icon-ty4.icon18:after {background-position:-196px -14px;} /* 1만원 상품권증정 */
+.icon-ty4.icon19:after {background-position:-255px -14px;} /* 균일가 */
+.icon-ty4.icon20:after {background-position:-282px -14px;} /* 포인트 적립 */
+.icon-ty4.icon21:after {background-position:-322px -14px;} /* 포인트 할인 */
+.icon-ty4.icon22:after {background-position:-112px -112px;} /* 3만원 할인 : 2016-11-10 : 추가 */
+.icon-ty4.icon23:after {background-position:0 -28px;} /* 1천원 할인 */
+.icon-ty4.icon24:after {background-position:-39px -28px;} /* 2천원 할인 */
+.icon-ty4.icon25:after {background-position:-80px -28px;} /* 3천원 할인 */
+.icon-ty4.icon26:after {background-position:-121px -28px;} /* 4천원 할인 */
+.icon-ty4.icon27:after {background-position:-162px -28px;} /* 5천원 할인 */
+.icon-ty4.icon28:after {background-position:-203px -28px;} /* 10% 할인 */
+.icon-ty4.icon29:after {background-position:-243px -28px;} /* 20% 할인 */
+.icon-ty4.icon30:after {background-position:-283px -28px;} /* 30% 할인 */
+.icon-ty4.icon31:after {background-position:-323px -28px;} /* 40% 할인 */
+.icon-ty4.icon32:after {background-position:-363px -28px;} /* 50% 할인 */
+.icon-ty4.icon33:after {background-position:-403px -28px;} /* 60% 할인 */
+.icon-ty4.icon36:after {background-position:0 -42px;} /* only 온라인 */
+.icon-ty4.icon37:after {background-position:-53px -42px;} /* 3천원 상품권 증정 */
+.icon-ty4.icon38:after {background-position:-113px -42px;} /* 상품권 증정 */
+.icon-ty4.icon39:after {background-position:-154px -42px;} /* HIT */
+.icon-ty4.icon40:after {background-position:-176px -42px;} /* HOT */
+.icon-ty4.icon41:after {background-position:-203px -42px;} /* 기획상품 */
+.icon-ty4.icon42:after {background-position:-237px -42px;} /* 특가 */
+.icon-ty4.icon43:after {background-position:-258px -42px;} /* 6천원 할인 */
+.icon-ty4.icon44:after {background-position:-298px -42px;} /* 7천원 할인 */
+.icon-ty4.icon45:after {background-position:-338px -42px;} /* 8천원 할인 */
+.icon-ty4.icon46:after {background-position:-378px -42px;} /* 9천원 할인 */
+.icon-ty4.icon47:after {background-position:0 -56px;} /* 1만원 할인 */
+.icon-ty4.icon48:after {background-position:-40px -56px;} /* 2만원 할인 */
+.icon-ty4.icon49:after {background-position:-80px -56px;} /* 15% 할인 */
+.icon-ty4.icon50:after {background-position:-119px -56px;} /* 25% 할인 */
+.icon-ty4.icon51:after {background-position:-158px -56px;} /* 35% 할인 */
+.icon-ty4.icon52:after {background-position:-197px -56px;} /* 45% 할인 */
+.icon-ty4.icon53:after {background-position:-236px -56px;} /* 65% 할인 */
+.icon-ty4.icon54:after {background-position:-275px -56px;} /* 70% 할인 */
+.icon-ty4.icon55:after {background-position:-314px -56px;} /* 75% 할인 */
+.icon-ty4.icon56:after {background-position:-353px -56px;} /* 80% 할인 */
+.icon-ty4.icon57:after {background-position:-392px -56px;} /* 85% 할인 */
+.icon-ty4.icon58:after {background-position:0 -70px;} /* 2개 구매시 20% 할인 */
+.icon-ty4.icon59:after {background-position:-73px -70px;} /* 2개 구매시 30% 할인 */
+.icon-ty4.icon60:after {background-position:-146px -70px;} /* 2개 구매시 50% 할인 */
+.icon-ty4.icon61:after {background-position:-220px -70px;} /* 2개 구매시 1만원 */
+.icon-ty4.icon62:after {background-position:-278px -70px;} /* 3개 구매시 1만원 */
+.icon-ty4.icon63:after {background-position:-336px -70px;} /* 3개 구매시 2천원 */
+.icon-ty4.icon64:after {background-position:-394px -70px;} /* 3개 구매시 5천원 */
+.icon-ty4.icon65:after {background-position:0 -84px;} /* 2개 구매시 1천원 할인 */
+.icon-ty4.icon66:after {background-position:-74px -84px;} /* 2개 구매시 2천원 할인 */
+.icon-ty4.icon67:after {background-position:-148px -84px;} /* 2개 구매시 3천원 할인 */
+.icon-ty4.icon68:after {background-position:-222px -84px;} /* 2개 구매시 4천원 할인 */
+.icon-ty4.icon69:after {background-position:-296px -84px;} /* 2개 구매시 5천원 할인 */
+.icon-ty4.icon70:after {background-position:-370px -84px;} /* 2개 구매시 6천원 할인 */
+.icon-ty4.icon71:after {background-position:0 -98px;} /* 2개 구매시 7천원 할인 */
+.icon-ty4.icon72:after {background-position:-74px -98px;} /* 2개 구매시 1만원 할인 */
+.icon-ty4.icon73:after {background-position:-148px -98px;} /* 5개 구매시 1천원 할인 */
+.icon-ty4.icon74:after {background-position:-222px -98px;} /* 사은품 증정 */
+.icon-ty4.icon89:after {background-position:-83px -126px;} /* 사은할인 */ /* 2018-11-21 : 추가 : icon89 추가 */
+.icon-ty4.icon75:after {background-position:-263px -98px;} /* 1천원 */
+.icon-ty4.icon76:after {background-position:-291px -98px;} /* 2천원 */
+.icon-ty4.icon77:after {background-position:-319px -98px;} /* 3천원 */
+.icon-ty4.icon78:after {background-position:-365px -98px;} /* NEW 신상품 */
+.icon-ty4.icon79:after {background-position:0 -112px;} /* 카드즉시할인*/
+.icon-ty4.icon80:after {background-position:-50px -112px;} /* 쿠폰 */
+.icon-ty4.icon81:after {background-position:-75px -112px;} /* 즉시할인*/
+.icon-ty4.icon82:after {background-position:-154px -112px;} /* 2016-11-23 : 2개구매시 10% 할인 */
+.icon-ty4.icon83:after {background-position:-225px -112px;} /* 2016-11-23 : 2개구매시 15% 할인 */
+.icon-ty4.icon84:after {background-position:-295px -112px;} /* 2016-11-23 : 2개구매시 40% 할인 */
+.icon-ty4.icon85:after {background-position:-367px -112px;} /* 2016-11-23 : 2개구매시 8천원 할인 */
+.ghs-container .icon-ty4.icon86:after {background-position:0 -126px;}/* 매장배송 */
+.ghs-container .icon-ty4.icon87:after {background-position:-40px -126px;}/* 매장픽업 */
+.ghs-container .icon-ty4.icon88:after {background-position:-81px -126px;}/* 퀵배송 */
+/* // 2017-01-24 : 수정 */
+/* // 2017-02-15 : v3아이콘 수정 */
+
+/* 2016-09-26 추가 //*/
+.icon-ty3 {overflow:hidden;position:relative;display:inline-block;text-indent:-9999em;vertical-align:middle;text-align:left;}
+.icon-ty3:after {content:"";position:absolute;background-size:200px 200px;background-image:url('../img/common/icons3.png');background-repeat:no-repeat;} /* 2016-09-27 수정 //*/
+.icon-ty3.arr6 {width:15px;height:9px;}
+.icon-ty3.arr6:after {background-position:0 0; -webkit-transition:transform 0.3s ease;transition:transform 0.3s ease; width:15px; height:9px; top:44%;right:20px;bottom:0;} /* 2016-09-27 추가 //*/
+.icon-ty3.arr6.open:after {-webkit-transform:rotate(-180deg); transform:rotate(-180deg)}
+.icon-ty3.arr7 {width:8px;height:4.5px; position:absolute; right:0; bottom:0; background-position:0 -11px; }
+.icon-ty3.arr7:after {background-position:0 -11px; -webkit-transition:transform 0.3s ease;transition:transform 0.3s ease; width:8px;height:4.5px; right:0; bottom:0;} /* 2016-09-27 수정 //*/
+.icon-ty3.arr7.open:after {-webkit-transform:rotate(-180deg); transform:rotate(-180deg); background-position:0 -18px;}
+.toggle-detail.toggle-inline{}
+/* // 2016-09-26 추가 */
+
+/* 2015-12-11 : 추가 // */
+/* 아이콘 세로 정렬 */
+.icon-ty5 {position:relative;overflow:hidden;display:block;margin-right:5px;margin-bottom:3px;width:30px;height:30px;vertical-align:top;text-indent:-9999px;}
+.icon-ty5.icon28, .icon-ty5.icon29, .icon-ty5.icon30, .icon-ty5.icon31, .icon-ty5.icon32, .icon-ty5.icon33, .icon-ty5.icon34,
+.icon-ty5.icon49, .icon-ty5.icon50, .icon-ty5.icon51, .icon-ty5.icon52, .icon-ty5.icon53, .icon-ty5.icon54, .icon-ty5.icon55,
+.icon-ty5.icon56, .icon-ty5.icon57, .icon-ty5.icon58, .icon-ty5.icon59, .icon-ty5.icon60, .icon-ty5.icon61, .icon-ty5.icon62,
+.icon-ty5.icon63, .icon-ty5.icon64, .icon-ty5.icon65, .icon-ty5.icon66, .icon-ty5.icon67, .icon-ty5.icon68, .icon-ty5.icon69,
+.icon-ty5.icon70, .icon-ty5.icon71, .icon-ty5.icon72, .icon-ty5.icon73, .icon-ty5.icon78, .icon-ty5.icon79 { margin-left:-3px !important; }
+
+/* 아이콘 우측 정렬 */
+.icon-ty6 {position:absolute;overflow:hidden;display:block;top:0; right:10px;margin-bottom:3px;width:30px;height:30px;vertical-align:top;text-indent:-9999px;}
+.icon-ty6:after {position:absolute;left:0;right:0;top:0;bottom:0;background:url('../img/common/icon-set.png') 0 0 no-repeat;background-size:450px auto;content:'';}
+.icon-ty6.icon1:after {background-position:-330px -30px;} /* 브랜드 할인 */
+/* // 2015-12-11 : 추가 */
+
+/* 아이콘2 */
+.icon-ty2 {overflow:hidden;position:relative;display:inline-block;text-indent:-9999em;vertical-align:middle;text-align:left;}
+.icon-ty2:after {content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-size:200px 200px;background-image:url('../img/common/icons.png');background-repeat:no-repeat;}/* 2016-10-31 : 수정 */
+.icon-ty2.question {width:19px;height:19px;}/* 2016-11-22 : 수정 */
+.icon-ty2.question:after {background-position:-161px -50px;}
+.icon-ty2.question.open:after, .icon-ty2.question.on:after {background-position:-141px -50px;}
+.icon-ty2.del {width:14px;height:14px;}
+.icon-ty2.del:after {background-position:-65px -25px;}
+.icon-ty2.arr2 {width:21px;height:21px;}
+.icon-ty2.arr2:after {background-position:0 -45px;-webkit-transition:transform 0.3s ease;transition:transform 0.3s ease;}
+.icon-ty2.arr2.open:after, .icon-ty2.arr2.on:after, .toggle.open .icon-ty2.arr2:after {-webkit-transform:rotate(-180deg);transform:rotate(-180deg);}
+.icon-ty2.arr3 {width:21px;height:21px;}
+.icon-ty2.arr3:after {background-position:-46px -45px;}
+.icon-ty2.arr5 {width:14px;height:14px;}
+.icon-ty2.arr5:after {background-position:-125px -51px;}
+.icon-ty2.arr5.open:after{background-position:-125px -51px;}
+/* 2016-10-21 :추가 ver3 // */
+.icon-ty2.arr6 {width:14px;height:8px;}
+.icon-ty2.arr6:after {background-position:-48px -160px;-webkit-transition:transform 0.3s ease;transition:transform 0.3s ease;}
+.icon-ty2.arr6.open:after, .icon-ty2.arr6.on:after, .toggle.open .icon-ty2.arr6:after {-webkit-transform:rotate(-180deg);transform:rotate(-180deg);}
+.icon-ty2.point {width:12px;height:12px;}
+.icon-ty2.point:after {background-position:-134px -38px;}
+.icon-ty2.share{ min-height:20px;}
+.icon-ty2.share:after { content:''; width:20px; height:20px; background-image:url("../img/common/icons3.png"); background-position:-70px -23px;}
+.icon-ty2.favo{ min-height:20px;}
+.icon-ty2.favo:after { content:''; width:20px; height:20px; background:url(../img/common/icon-2019.png) no-repeat 0 -435px; background-size:300px auto;}
+.icon-ty2.favo.on:after { background-position-x:-40px;}
+.ghs-container .point{position:relative;}
+.ghs-container .point:after{content:'';position:absolute;top:0;right:-7px;width:6px;height:6px;background:url('../img/common/tit-point.png');background-size:6px 6px;}
+/* 2019-08-01 : 추가 */
+.icon-ty2.favo2{ min-height:28px; min-width:28px;}
+.icon-ty2.favo2:after { content:''; width:28px; height:28px; background:url(../img/common/icon-2019.png) no-repeat -80px -400px; background-size:300px auto;}
+.icon-ty2.favo2.on:after { background-position-x:-120px;}
+/* //2019-08-01 : 추가 */
+
+/* 2016-09-26 추가 //*/
+.icon-ty3 {overflow:hidden;position:relative;display:inline-block;text-indent:-9999em;vertical-align:middle;text-align:left;}
+.icon-ty3:after {content:"";position:absolute;background-size:200px 200px;background-image:url('../img/common/icons3.png');background-repeat:no-repeat;} /* 2016-09-27 수정 //*/
+.icon-ty3.arr6 {width:15px;height:9px;}
+.icon-ty3.arr6:after {background-position:0 0; -webkit-transition:transform 0.3s ease;transition:transform 0.3s ease; width:15px; height:9px; top:44%;right:4px;bottom:0;} /* 2016-09-27 추가 //*/
+.icon-ty3.arr6.open:after {-webkit-transform:rotate(-180deg); transform:rotate(-180deg)}
+.icon-ty3.arr7 {width:8px;height:4.5px; position:absolute; right:0; bottom:0; background-position:0 -11px; }
+.icon-ty3.arr7:after {background-position:0 -11px; -webkit-transition:transform 0.3s ease;transition:transform 0.3s ease; width:8px;height:4.5px; right:0; bottom:0;} /* 2016-09-27 수정 //*/
+.icon-ty3.arr7.open:after {-webkit-transform:rotate(-180deg); transform:rotate(-180deg); background-position:0 -18px;}
+/* // 2016-09-26 추가 */
+/* 2016-10-11 : 추가 // */
+.icon-ty7 {overflow:hidden;position:relative;display:inline-block;text-indent:-9999em;vertical-align:middle;text-align:left;}
+.icon-ty7:after {content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-size:200px 200px;background-image:url('../img/common/icons_1.png');background-repeat:no-repeat;}
+.icon-ty7.exmark{width:10px; height:10px;}
+.icon-ty7.exmark:after{background-position:0px 0px;}
+/* //  2016-10-11 : 추가 */
+
+/* 2017-02-15 : v3아이콘 수정 // */
+/* 2017-01-31 : 수정 // */
+/* 상품상세 아이콘 : 2017-01-24 : 추가 // */
+.icon-ty8 {position:relative;overflow:hidden;float:left;display:inline-block;margin-right:3px;width:50px;height:50px;vertical-align:top;text-indent:-9999px;}
+.icon-ty8:after {position:absolute;left:0;right:0;top:0;bottom:0;background:url('../img/common/icon-set2.png') 0 0 no-repeat;background-size:700px auto;content:'';}
+.icon-ty8.icon1:after {background-position:0 0;} /* 1+1 */
+.icon-ty8.icon2:after {background-position:-50px 0;} /* 2+1 */
+.icon-ty8.icon3:after {background-position:-100px 0;} /* 3+1 */
+.icon-ty8.icon4:after {background-position:-150px 0;} /* 4+1 */
+.icon-ty8.icon5:after {background-position:-200px 0;} /* 5+1 */
+.icon-ty8.icon6:after {background-position:-250px 0;} /* 6+1 */
+.icon-ty8.icon7:after {background-position:-300px 0;} /* 7+1 */
+.icon-ty8.icon8:after {background-position:-350px 0;} /* 8+1 */
+.icon-ty8.icon9:after {background-position:-400px 0;} /* 9+1 */
+.icon-ty8.icon10:after {background-position:-450px 0;} /* 10+1 */
+.icon-ty8.icon11:after {background-position:0 -50px;} /* 전단상품 */
+.icon-ty8.icon12:after {background-position:-50px -50px;} /* 행사상품 */
+.icon-ty8.icon14:after {background-position:-150px -50px;} /* 덤 */
+.icon-ty8.icon15:after {background-position:-200px -50px;} /* 추가증정 */
+.icon-ty8.icon16:after {background-position:-250px -50px;} /* 함께할인 */
+.icon-ty8.icon17:after {background-position:-300px -50px;} /* 5천원 상품권증정 */
+.icon-ty8.icon18:after {background-position:-350px -50px;} /* 1만원 상품권증정 */
+.icon-ty8.icon19:after {background-position:-400px -50px;} /* 균일가 */
+.icon-ty8.icon20:after {background-position:-450px -50px;} /* 포인트 적립 */
+.icon-ty8.icon21:after {background-position:-500px -50px;} /* 포인트 할인 */
+.visual-img .icon-ty8.icon23, .visual-img .icon-ty8.icon24, .visual-img .icon-ty8.icon25, .visual-img .icon-ty8.icon26, .visual-img .icon-ty8.icon27, .visual-img .icon-ty8.icon28, .visual-img .icon-ty8.icon29, .visual-img .icon-ty8.icon30, .visual-img .icon-ty8.icon31, .visual-img .icon-ty8.icon32, .visual-img .icon-ty8.icon33, .visual-img .icon-ty8.icon43, .visual-img .icon-ty8.icon44, .visual-img .icon-ty8.icon45, .visual-img .icon-ty8.icon46, .visual-img .icon-ty8.icon47, .visual-img .icon-ty8.icon48, .visual-img .icon-ty8.icon49, .visual-img .icon-ty8.icon50, .visual-img .icon-ty8.icon51, .visual-img .icon-ty8.icon52, .visual-img .icon-ty8.icon53, .visual-img .icon-ty8.icon54, .visual-img .icon-ty8.icon55, .visual-img .icon-ty8.icon56, .visual-img .icon-ty8.icon57, .visual-img .icon-ty8.icon58, .visual-img .icon-ty8.icon59, .visual-img .icon-ty8.icon60, .visual-img .icon-ty8.icon61, .visual-img .icon-ty8.icon62, .visual-img .icon-ty8.icon63, .visual-img .icon-ty8.icon64, .visual-img .icon-ty8.icon65, .visual-img .icon-ty8.icon66, .visual-img .icon-ty8.icon67, .visual-img .icon-ty8.icon68, .visual-img .icon-ty8.icon69, .visual-img .icon-ty8.icon70, .visual-img .icon-ty8.icon71, .visual-img .icon-ty8.icon72, .visual-img .icon-ty8.icon73,
+.product-ty1 .icon-ty8.icon23, .product-ty1 .icon-ty8.icon24, .product-ty1 .icon-ty8.icon25, .product-ty1 .icon-ty8.icon26, .product-ty1 .icon-ty8.icon27, .product-ty1 .icon-ty8.icon28, .product-ty1 .icon-ty8.icon29, .product-ty1 .icon-ty8.icon30, .product-ty1 .icon-ty8.icon31, .product-ty1 .icon-ty8.icon32, .product-ty1 .icon-ty8.icon33, .product-ty1 .icon-ty8.icon43, .product-ty1 .icon-ty8.icon44, .product-ty1 .icon-ty8.icon45, .product-ty1 .icon-ty8.icon46, .product-ty1 .icon-ty8.icon47, .product-ty1 .icon-ty8.icon48, .product-ty1 .icon-ty8.icon49, .product-ty1 .icon-ty8.icon50, .product-ty1 .icon-ty8.icon51, .product-ty1 .icon-ty8.icon52, .product-ty1 .icon-ty8.icon53, .product-ty1 .icon-ty8.icon54, .product-ty1 .icon-ty8.icon55, .product-ty1 .icon-ty8.icon56, .product-ty1 .icon-ty8.icon57, .product-ty1 .icon-ty8.icon58, .product-ty1 .icon-ty8.icon59, .product-ty1 .icon-ty8.icon60, .product-ty1 .icon-ty8.icon61, .product-ty1 .icon-ty8.icon62, .product-ty1 .icon-ty8.icon63, .product-ty1 .icon-ty8.icon64, .product-ty1 .icon-ty8.icon65, .product-ty1 .icon-ty8.icon66, .product-ty1 .icon-ty8.icon67, .product-ty1 .icon-ty8.icon68, .product-ty1 .icon-ty8.icon69, .product-ty1 .icon-ty8.icon70, .product-ty1 .icon-ty8.icon71, .product-ty1 .icon-ty8.icon72, .product-ty1 .icon-ty8.icon73 {margin-left:0 !important;}
+.icon-ty8.icon22:after {background-position:-350px -300px;} /* 3만원 할인 */
+.icon-ty8.icon23:after {background-position:0 -150px;} /* 1천원 할인 */
+.icon-ty8.icon24:after {background-position:-50px -150px;} /* 2천원 할인 */
+.icon-ty8.icon25:after {background-position:-100px -150px;} /* 3천원 할인 */
+.icon-ty8.icon26:after {background-position:-150px -150px;} /* 4천원 할인 */
+.icon-ty8.icon27:after {background-position:-200px -150px;} /* 5천원 할인 */
+.icon-ty8.icon28:after {background-position:-550px -150px;} /* 10% 할인 */
+.icon-ty8.icon29:after {background-position:-50px -200px;} /* 20% 할인 */
+.icon-ty8.icon30:after {background-position:-150px -200px;} /* 30% 할인 */
+.icon-ty8.icon31:after {background-position:-250px -200px;} /* 40% 할인 */
+.icon-ty8.icon32:after {background-position:-350px -200px;} /* 50% 할인 */
+.icon-ty8.icon33:after {background-position:-400px -200px;} /* 60% 할인 */
+.icon-ty8.icon36:after {background-position:0 -100px;} /* only 온라인 */
+.icon-ty8.icon37:after {background-position:-50px -100px;} /* 3천원 상품권 증정 */
+.icon-ty8.icon38:after {background-position:-100px -100px;} /* 상품권 증정 */
+.icon-ty8.icon39:after {background-position:-150px -100px;} /* HIT */
+.icon-ty8.icon40:after {background-position:-200px -100px;} /* HOT */
+.icon-ty8.icon41:after {background-position:-250px -100px;} /* 기획상품 */
+.icon-ty8.icon42:after {background-position:-500px -100px;} /* 특가 */
+.icon-ty8.icon43:after {background-position:-250px -150px;} /* 6천원 할인 */
+.icon-ty8.icon44:after {background-position:-300px -150px;} /* 7천원 할인 */
+.icon-ty8.icon45:after {background-position:-350px -150px;} /* 8천원 할인 */
+.icon-ty8.icon46:after {background-position:-400px -150px;} /* 9천원 할인 */
+.icon-ty8.icon47:after {background-position:-450px -150px;} /* 1만원 할인 */
+.icon-ty8.icon48:after {background-position:-500px -150px;} /* 2만원 할인 */
+.icon-ty8.icon49:after {background-position:0px -200px;} /* 15% 할인 */
+.icon-ty8.icon50:after {background-position:-100px -200px;} /* 25% 할인 */
+.icon-ty8.icon51:after {background-position:-200px -200px;} /* 35% 할인 */
+.icon-ty8.icon52:after {background-position:-300px -200px;} /* 45% 할인 */
+.icon-ty8.icon53:after {background-position:-400px -200px;} /* 65% 할인 */
+.icon-ty8.icon54:after {background-position:-450px -200px;} /* 70% 할인 */
+.icon-ty8.icon55:after {background-position:-500px -200px;} /* 75% 할인 */
+.icon-ty8.icon56:after {background-position:-100px -300px;} /* 80% 할인 */
+.icon-ty8.icon57:after {background-position:-150px -300px;} /* 85% 할인*/
+.icon-ty8.icon58:after {background-position:0 -250px;} /* 2개 구매시 20% 할인 */
+.icon-ty8.icon59:after {background-position:-50px -250px;} /* 2개 구매시 30% 할인 */
+.icon-ty8.icon60:after {background-position:-100px -250px;} /* 2개 구매시 50% 할인 */
+.icon-ty8.icon61:after {background-position:-150px -250px;} /* 2개 구매시 1만원 */
+.icon-ty8.icon62:after {background-position:-200px -300px;} /* 3개 구매시 1만원 */
+.icon-ty8.icon63:after {background-position:-200px -250px;} /* 3개 구매시 2천원 */
+.icon-ty8.icon64:after {background-position:-250px -250px;} /* 3개 구매시 5천원 */
+.icon-ty8.icon65:after {background-position:-300px -250px;} /* 2개 구매시 1천원 할인 */
+.icon-ty8.icon66:after {background-position:-350px -250px;} /* 2개 구매시 2천원 할인 */
+.icon-ty8.icon67:after {background-position:-400px -250px;} /* 2개 구매시 3천원 할인 */
+.icon-ty8.icon68:after {background-position:-450px -250px;} /* 2개 구매시 4천원 할인 */
+.icon-ty8.icon69:after {background-position:-500px -250px;} /* 2개 구매시 5천원 할인 */
+.icon-ty8.icon70:after {background-position:-550px -250px;} /* 2개 구매시 6천원 할인 */
+.icon-ty8.icon71:after {background-position:-250px -300px;} /* 2개 구매시 7천원 할인 */
+.icon-ty8.icon72:after {background-position:0 -300px;} /* 2개 구매시 1만원 할인 */
+.icon-ty8.icon73:after {background-position:-50px -300px;} /* 5개 구매시 1천원 할인 */
+.icon-ty8.icon74:after {background-position:-300px -100px;} /* 사은품 증정 */
+.icon-ty8.icon75:after {background-position:-350px -100px;} /* 1천원 */
+.icon-ty8.icon76:after {background-position:-400px -100px;} /* 2천원 */
+.icon-ty8.icon77:after {background-position:-450px -100px;} /* 3천원 */
+.icon-ty8.icon78:after {background-position:-550px -100px;} /* NEW 신상품 */
+.icon-ty8.icon82:after {background-position:-400px -300px;} /* 2개구매시 10% 할인 */
+.icon-ty8.icon83:after {background-position:-450px -300px;}/* 2개구매시 15% 할인 */
+.icon-ty8.icon84:after {background-position:-500px -300px;}/* 2개구매시 40% 할인 */
+.icon-ty8.icon85:after {background-position:-550px -300px;}/* 2개구매시 8천원 할인 */
+.icon-ty8.icon100:after {background-position:-650px -100px;} /* MD추천 */
+.icon-ty8.icon101:after {background-position:-600px -100px;} /* 적립쿠폰 */
+
+.icon-ty8.icon01:after {background-position:0 -500px;}/* 균일가 */
+.icon-ty8.icon02:after {background-position:-50px -500px;}/* 행사상품 */
+.icon-ty8.icon03:after {background-position:-100px -500px;}/* 사은품 증정 */
+.icon-ty8.icon04:after {background-position:-150px -500px;}/* 세트상품 */
+.icon-ty8.icon05:after {background-position:-200px -500px;}/* 추가증정 */
+.iconstxt .icon-ty8 span:first-child {position:absolute;top:11px;right:17px;z-index:10;font-size:25px;letter-spacing:-0.25px;color:#fff;text-indent:0;font-weight:bold;line-height:1;}
+.iconstxt .icon-ty8.icon32:after {background-position:-300px -300px;}
+/* // 2017-01-24 : 추가 */
+/* // 2017-01-31 : 수정 */
+/* // 2017-02-15 : v3아이콘 수정 */
+
+/* 2016-10-21 : 주문배송조회 물음표 아이콘 추가 // */
+.icon-ty2.question-new {width:20px;height:20px;}
+.icon-ty2.question-new:after {background-position:-141px -49px;}
+/* 2016-10-21 : 주문배송조회 물음표 아이콘 추가 // */
+.ghs-container .icon-ty2.question {position:relative;width:12px;height:12px;}
+.ghs-container .icon-ty2.question:after {position:absolute;top:0;left:0;right:0;bottom:0;width:12px;height:12px;background-size:200px 200px;background-image:url('../img/common/icons_1.png');background-repeat:no-repeat;background-position:-132px 0;}
+.ghs-container .icon-ty2.question.open:after, .ghs-container .icon-ty2.question.on:after{background-position:-132px 0;}
+
+
+/* 2020-04-22 : 수정 */
+.icon-ty2.file {width:12px;height:12px;}
+.icon-ty2.file:after {background-position:-113px -15px;}
+.icon-ty2.star-on {width:14px;height:14px;}
+.icon-ty2.star-on:after {background-position:-83px -82px;}
+.icon-ty2.star-off {width:14px;height:14px;}
+.icon-ty2.star-off:after {background-position:-83px -97px;}
+.info-star {overflow:hidden;position:relative;display:inline-block;text-indent:-9999em;width:74px;height:14px;vertical-align:middle;background-position:-18px -37px;text-align:left;}
+.info-star, .info-star:after {background-image:url('../img/common/icons_1.png');background-size:200px 200px;}
+.info-star:after {content:"";position:absolute;top:0;left:0;bottom:0;width:0;background-position:-18px -22px;}
+.info-star.info-star2 {width:58px;height:10px;background-position:-18px -63px;}
+.info-star.info-star2:after {background-position:-18px -53px;}
+.info-star.star1:after {width:14px;}
+.info-star.star2:after {width:29px;}
+.info-star.star3:after {width:43px;}
+.info-star.star4:after {width:58px;}
+.info-star.star5:after {width:72px;}
+.info-star.star0-5:after {width:7px;}
+.info-star.star1-5:after {width:21.5px;}
+.info-star.star2-5:after {width:36px;}
+.info-star.star3-5:after {width:50.5px;}
+.info-star.star4-5:after {width:65px;}
+.info-star2.star1:after {width:11px;}
+.info-star2.star2:after {width:24px;}
+.info-star2.star3:after {width:35px;}
+.info-star2.star4:after {width:46px;}
+.info-star2.star5:after {width:58px;}
+/* //2020-04-22 : 수정 */
+
+.icon-com, .icon-com2, .icon-com3, .icon-com4, .icon-etc, .icon-com6, .icon-com9 {overflow:hidden;position:relative;display:inline-block;text-indent:-9999em;vertical-align:middle;text-align:left;}
+.icon-com:after, .icon-com2:after, .icon-com3:after, .icon-com4:after, .icon-etc:after, .icon-com6:after {content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-size:200px 200px;background-image:url('../img/common/icon-com.png');background-repeat:no-repeat;}
+.icon-com9:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-size:200px 200px;background-image:url('../img/common/icon-com2.png');background-repeat:no-repeat;}
+
+.icon-com {margin-top:-2px;height:14px;}
+.icon-com.icon1 {width:28px;}
+.icon-com.icon1:after{background-position:-70px -59px;}
+.icon-com.icon2 {width:32px;}
+.icon-com.icon2:after{background-position:-70px -89px;}
+.icon-com.icon3 {width:32px;}
+.icon-com.icon3:after{background-position:-70px -74px;}
+
+.icon-com2 {height:12px;}
+.icon-com2.coupon {width:22px;}
+.icon-com2.icon-block{display:block;}
+.icon-com2.coupon:after{background-position:-70px 0;}
+.icon-com2.salecard {width:49px;}
+.icon-com2.salecard:after{background-position:-70px -12px;}
+.icon-com2.icon1 {width:49px;}
+.icon-com2.icon1:after{background-position:-70px -12px;}
+.icon-com2.icon2 {width:22px;}
+.icon-com2.icon2:after{background-position:-70px 0;}
+.icon-com2.icon3 {width:35px;}
+.icon-com2.icon3:after{background-position:-70px -24px;}
+.icon-com2.icon4 {width:35px;}
+.icon-com2.icon4:after{background-position:-70px -36px;}
+.icon-com2.icon5 {width:22px;height:10px;}
+.icon-com2.icon5:after{background-position:-70px -48px;}
+.icon-com2.icon6 {width:32px;height:12px;}
+.icon-com2.icon6:after{background-position:-70px -104px;}
+/* 2015-08-25 : 옵션 아이콘 추가 start */
+.icon-com2.icon7 {width:21px;height:12px;}
+.icon-com2.icon7:after{background-position:-114px 0;}
+/* 2015-08-25 : 옵션 아이콘 추가 end */
+/* 2016-05-12 : 쿠폰 적용, 쿠폰미적용 아이콘 추가 // */
+.icon-com2.icon8 {width:50px;height:16px;}
+.icon-com2.icon8:after{background-position:-103px -91px;}
+.icon-com2.icon9 {width:50px;height:16px;}
+.icon-com2.icon9:after{background-position:-103px -107px;}
+/* // 2016-05-12 : 쿠폰 적용, 쿠폰미적용 아이콘 추가 */
+/* 2016-09-26 : 퀵배송 아이콘 추가 // */
+.icon-com2.icon10 {width:27px;height:14px;}
+.icon-com2.icon10:after{background-position:-119px -27px;}
+.icon-com2.icon11{width:32px;height:14px;}
+.icon-com2.icon11:after{background-position:-114px -42px;}
+/*// 2016-09-26 : 퀵배송 아이콘 추가 */
+/* 2016-10-21 : 주문배송조회 아이콘 추가 // */
+.icon-com2.icon12{width:36px;height:12px;}
+.icon-com2.icon12:after{background-position:-103px -126px;}
+/* // 2016-10-21 : 주문배송조회 아이콘 추가 */
+.icon-com3 {height:17px;}
+.icon-com3.icon1 {width:31px;}
+.icon-com3.icon1:after{background-position:-150px 0;}
+/* 2016-09-01 : 추가 // */
+.icon-com3.icon3 {width:28px;height:15px;}
+.icon-com3.icon3:after{background-position:-119px -12px;} /* NEW */
+/* // 2016-09-01 : 추가 */
+.icon-com4 {height:18px;}
+.icon-com4.icon1 {width:37px;}
+.icon-com4.icon1:after{background-position:0 -35px;}
+.icon-com4.icon2 {width:43px;height:15px;margin:0 0 0 4px;}
+.icon-com4.icon2:after {background-position:0 -55px;}
+.icon-com4.icon3 {width:45px;height:15px;margin:-3px 0 0 4px;}
+.icon-com4.icon3:after {background-position:0 -70px;}
+.icon-com4.icon4 {display:inline-block;width:45px;height:15px;margin:-3px 0 0 5px;}
+.icon-com4.icon4:after {background-position:0 -87px;}
+.icon-com4.icon5 {width:61px;height:53px;}
+.icon-com4.icon5:after {background-position:0 -147px;}
+.icon-com4.icon6 {width:42px;height:15px;} /* 2016-01-14 : 수정 */
+.icon-com4.icon6:after {background-position:0 -105px;}
+
+/*상품평 아이콘*/
+.icon-com5, .icon-state{font-size:10px;line-height:22px;color:#333;font-weight:normal;}
+.icon-com5:before, .icon-state:before {content:"";display:inline-block;width:22px;height:22px;margin:0 10px 0 0;background-size:120px 200px;background-image:url('../img/common/icon-satisfaction.png');background-repeat:no-repeat;background-position:0 0;vertical-align:top;}
+.icon-com5 {overflow:hidden;display:inline-block;vertical-align:middle;text-align:left;}
+.icon-com5.icon1:before{background-position:0 -178px;}
+.icon-com5.icon2:before{background-position:-22px -178px;}
+.icon-com5.icon3:before{background-position:-44px -178px;margin-right:10px;}
+.icon-com5.icon4:before{background-position:-66px -178px;}
+
+.icon-com6 {width:46px;height:46px;}
+.icon-com6.icon1:after{background-position:-154px -138px;}
+.icon-com6.icon2:after {background-position:-154px -91px;}
+
+/* 2015-07-10 : 아이콘 추가 start */
+.icon-com7 {overflow:hidden;position:relative;display:inline-block;margin:0 3px 0 0;width:20px;height:12px;text-indent:-9999em;vertical-align:middle;text-align:left;}
+.icon-com7:before {content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-size:200px 200px;background-image:url('../img/common/icon-com.png');background-repeat:no-repeat;}
+.icon-com7.icon1:before {background-position:-75px -117px;}
+.icon-com7.icon2:before {background-position:-75px -130px;}
+.icon-com7.icon3 {width:25px;}
+.icon-com7.icon3:before {background-position:-75px -143px;}
+.icon-com7.icon4 {width:32px;}
+.icon-com7.icon4:before {background-position:-75px -156px;}
+.icon-com7.icon5 {width:32px;}
+.icon-com7.icon5:before {background-position:-75px -169px;}
+.icon-com7.icon6 {width:32px;}
+.icon-com7.icon6:before {background-position:-75px -182px;}
+.icon-com7.icon7:before {background-position:-93px 0;}
+/* 2015-07-10 : 아이콘 추가 end */
+
+/* 2016-10-10 : 아이콘 추가 start */
+.icon-com8:before{content:'';display:inline-block;height:16px;background-image:url(../img/common/icons2.png);background-repeat:no-repeat;background-size:400px 300px; margin-bottom:5px;}/* 2017-01-13 : 수정 */
+.icon-com8.icon1:before{width:20px;background-position:0 -40px; display:block;}
+.icon-com8.icon2:before{width:20px;background-position:-20px -39px; display:block;}/* 2017-01-13 : 수정 */
+/* 2016-10-12 : 아이콘 추가 */
+.icon-com8.icon1.on:before{background-position:-40px -40px;}
+.icon-com8.icon2.on:before{background-position:-60px -39px;}/* 2017-01-13 : 수정 */
+
+/* 2016-10-10 : 아이콘 추가 end */
+
+/* 2016-10-11 : 아이콘 추가 // */
+.icon-com9.icon1{width:54px; height:14px;}
+.icon-com9.icon2{width:27.5px; height:14px;}
+.icon-com9.icon3{width:42.5px; height:14px;}
+.icon-com9.icon4{width:25px; height:25px;}
+.icon-com9.icon1:after{background-position:0 0;}
+.icon-com9.icon2:after{background-position:0 -20px;}
+.icon-com9.icon3:after{background-position:0 -40px;}
+.icon-com9.icon4:after{background-position:0 -59px;}
+/* // 2016-10-11 : 아이콘 추가  */
+
+/* 2016-10-19 : 아이콘 추가 - 주문배송조회 뉴 아이콘 // */
+.icon-com10{display:inline-block; margin:0 4px 2px 0; vertical-align:middle; text-align:left; text-indent:-9999999px; position:relative;font-style:normal;} /* 2020-02-04 : 수정 */
+.icon-com10:before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-size:200px 200px; background-image:url('../img/common/icon-com2.png');background-repeat:no-repeat;}
+.icon-com10.icon1{width:21px; height:14px;}
+.icon-com10.icon2{width:27px; height:14px;}
+.icon-com10.icon3{width:34px; height:14px;}
+.icon-com10.icon4{width:34px; height:14px;}
+.icon-com10.icon5{width:27px; height:14px;}
+.icon-com10.icon6{width:21px; height:14px;}
+.icon-com10.icon1:before{background-position:0 -92px;}
+.icon-com10.icon2:before{background-position:0 -114px;}
+.icon-com10.icon3:before{background-position:0 -137px;}
+.icon-com10.icon4:before{background-position:0 -160px;}
+.icon-com10.icon5:before{background-position:0 -183px;}
+.icon-com10.icon6:before{background-position:-44px -92px;}
+/*// 2016-10-19 : 아이콘 추가 주문배송조회 뉴 아이콘 */
+
+/* 2019-09-05 : 삭제
+.list-ty4 .icon-coupon:before, .list-ty4 .icon-order:before {display:block;margin:0 auto 2px;}
+.icon-coupon:before {content:"";display:inline-block;height:27px;background-size:170px 85px;background-image:url('../img/common/icon-coupon.png');background-repeat:no-repeat;background-position:0 0;vertical-align:top;}
+.icon-coupon.icon1:before {width:27px;background-position:0 0;}
+a:hover.icon-coupon.icon1:before, a:focus.icon-coupon.icon1:before, .on.icon-coupon.icon1:before {background-position:0 -27px;}
+.icon-coupon.icon2:before {width:26px;background-position:-28px 0;}
+a:hover.icon-coupon.icon2:before, a:focus.icon-coupon.icon2:before, .on.icon-coupon.icon2:before {background-position:-28px -27px;}
+.icon-coupon.icon3:before {width:27px;background-position:-57px 0;}
+a:hover.icon-coupon.icon3:before, a:focus.icon-coupon.icon3:before, .on.icon-coupon.icon3:before {background-position:-57px -27px;}
+.icon-coupon.icon4:before {width:25px;background-position:-86px 0;}
+a:hover.icon-coupon.icon4:before, a:focus.icon-coupon.icon4:before, .on.icon-coupon.icon4:before {background-position:-86px -27px;}
+.icon-coupon.icon5:before {width:26px;background-position:-116px 0;}
+a:hover.icon-coupon.icon5:before, a:focus.icon-coupon.icon5:before, .on.icon-coupon.icon5:before {background-position:-116px -27px;}
+.icon-coupon.icon6:before {width:22px;background-position:-145px 0;}
+a:hover.icon-coupon.icon6:before, a:focus.icon-coupon.icon6:before, .on.icon-coupon.icon6:before {background-position:-145px -27px;}
+.icon-coupon.icon7 {display:block;padding:11px 0;color:#fff;}
+.icon-coupon.icon7:before {width:60px;background-position:0 -58px;}
+*/
+/* 2019-09-05 : 추가 : 등급혜택용 */
+.icon-coupon{display:inline-block;overflow:hidden;width:132px;height:68px;padding:18px 25px 0 0;background:url(../img/common/icon-grade.png) no-repeat -0px -75px;background-size:300px auto;font-size:34px;color:#ed1c24;font-weight:bold;font-style:normal;text-align:center;line-height:34px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.icon-coupon small{display:inline-block;margin-bottom:-3px;font-size:21px;vertical-align:middle;}
+.icon-coupon.won{font-size:25px;line-height:25px;padding-top:23px;}
+.icon-coupon.won small{margin-bottom:-5px;font-size:14px;}
+.icon-point{display:inline-block;overflow:hidden;width:63px;height:53px;background:url(../img/common/icon-grade.png) no-repeat -0px -150px;background-size:300px auto;}
+.icon-okcashbag{display:inline-block;overflow:hidden;width:63px;height:53px;background:url(../img/common/icon-grade.png) no-repeat -71px -152px;background-size:300px auto;}
+.ico-grade{display:inline-block;overflow:hidden;width:61px;height:67px;background:url(../img/common/icon-grade.png) no-repeat;background-size:300px auto;text-indent:-999px;}
+.ico-grade.red{background-position:-75px 0;}
+.ico-grade.white{background-position:-150px 0;}
+.ico-grade.normal{background-position:-225px 0;}
+.ico-grade-s{display:inline-block;overflow:hidden;width:31px;height:33px;background:url(../img/common/icon-grade.png) no-repeat -150px -75px;background-size:300px auto;text-indent:-999px;vertical-align:middle;margin-top:-3px;}
+.ico-grade-s.red{background-position-x:-185px;}
+.ico-grade-s.white{background-position-x:-220px;}
+.ico-grade-s.normal{background-position-x:-255px;}
+.ico-grade-s2{display:inline-block;overflow:hidden;width:36px;height:39px;background:url(../img/common/icon-grade.png) no-repeat -0px -275px;background-size:300px auto;text-indent:-999px;vertical-align:middle;margin-top:-3px;}
+.ico-grade-s2.red{background-position-x:-50px;}
+.ico-grade-s2.white{background-position-x:-100px;}
+.ico-grade-s2.normal{background-position-x:-150px;}
+/* 2019-09-24 : 슬라이딩메뉴 등급아이콘 추가 */
+.ico-grade-s3{display:inline-block;overflow:hidden;width:23px;height:24px;background:url(../img/common/icon-grade.png) no-repeat -0px -110px;background-size:300px auto;text-indent:-999px;vertical-align:middle;margin-top:-3px;}
+.ico-grade-s3.black{background-position-x:-150px;}
+.ico-grade-s3.red{background-position-x:-175px;}
+.ico-grade-s3.white{background-position-x:-200px;}
+.ico-grade-s3.normal{background-position-x:-225px;}
+/* //2019-09-24 : 슬라이딩메뉴 등급아이콘 추가 */
+
+/* 2020-01-10  : 상품평 등급제 아이콘 추가 */
+.ico-grade-s4{display:inline-block;overflow:hidden;width:18px;height:20px; background:url(../img/common/icon-grade.png) no-repeat -0px -141px;background-size:300px auto;text-indent:-999px;vertical-align:middle;margin-top:-3px;}
+.ico-grade-s4.black{background-position-x:-150px;}
+.ico-grade-s4.red{background-position-x:-170px;}
+.ico-grade-s4.white{background-position-x:-191px;}
+.ico-grade-s4.gray{background-position-x:-211px;} /* 2020-01-31 추가 */
+/* //2020-01-10  : 상품평 등급제 아이콘 추가 */
+
+/* //2019-09-05 : 추가 : 등급혜택용 */
+
+.icon-order:before {content:"";display:inline-block;width:36px;height:26px;background-size:99px 200px;background-image:url('../img/common/icon-order.png');background-repeat:no-repeat;background-position:0 0;vertical-align:top;}
+.icon-order.icon1:before {background-position:0 0;}
+.icon-order.icon2:before {background-position:0 -26px;}
+.icon-order.icon3:before {background-position:0 -52px;}
+.icon-order.icon4:before {background-position:0 -78px;}
+.icon-order.icon5:before {background-position:0 -104px;}
+.icon-order.icon6:before {background-position:0 -130px;}
+.icon-order.icon1.on:before {background-position:-36px 0;}
+.icon-order.icon2.on:before {background-position:-36px -26px;}
+.icon-order.icon3.on:before {background-position:-36px -52px;}
+.icon-order.icon4.on:before {background-position:-36px -78px;}
+.icon-order.icon5.on:before {background-position:-36px -104px;}
+.icon-order.icon6.on:before {background-position:-36px -130px;}
+
+.icon-etc.icon1 {width:45px;height:13px;} /* 싸데이가 *//* 2016-07-15 : 수정 */
+.icon-etc.icon1:after{background-position:-153px -187px;}
+/* 2016-07-15 : 추가 // */
+.icon-etc.icon2 {width:27px;height:16px;}
+.icon-etc.icon2:after{background-position:-43px 0;} /* MD */
+/* // 2016-07-15 : 추가 */
+
+/* 아이콘3 */
+.icon-txt1 {position:relative;display:inline-block;line-height:18px;padding:0 0 0 18px;}
+.icon-txt1:before, .icon-txt1:after {position:absolute;top:50%;content:'';background-size:200px 200px;background-image:url('../img/common/icons.png');background-repeat:no-repeat;vertical-align:middle;}
+.icon-txt1.sale:before {left:0;width:12px;height:12px;margin-top:-6px;background-position:-110px -67px;}
+.icon-txt1.plus:before {left:0;}
+.icon-txt1.plus:before, .icon-txt1.plus2:after {width:14px;height:14px;margin-top:-7px;background-position:-186px -99px;}
+.icon-txt1.plus2 {padding:0 18px 0 0;}
+.icon-txt1.plus2:after {right:0;}
+
+.icon-txt2 {position:relative;display:inline-block;line-height:18px;padding:0 0 0 18px;}
+.icon-txt2:before, .icon-txt2:after {position:absolute;top:50%;content:'';background-size:200px 200px;background-image:url('../img/common/icons_1.png');background-repeat:no-repeat;vertical-align:middle;}
+.icon-txt2.sale:before {left:5px;width:12px;height:12px;margin-top:-5px;background-position:0px -12px;}
+
+/* 주문 배송 아이콘*/
+.icon-state {font-size:12px;color:#009900;line-height:28px;}
+.icon-state:before {margin:5px 2px 0 0;width:17px;height:17px;}
+.icon-state.icon1:before {background-position:-69px 0;}/* 결제완료 - 기본 체크 */
+.icon-state.icon2:before {background-position:-69px -17px;}/* 상품준비중 */
+.icon-state.icon3:before {background-position:-69px -34px;}/* 배송중 */
+.icon-state.icon4:before {background-position:-69px -51px;}/* 배송완료 */
+.icon-state.icon5:before {background-position:-69px -68px;}/* 주문취소 */
+.icon-state.icon6:before {background-position:-69px -85px;}/* 부분취소 */
+.icon-state.icon7:before {width:0;}/* 고객변심 */
+.icon-state.icon16:before {background-position:-69px -102px;}/* 부분취소 */
+
+/* 주문 교환,반품 아이콘*/
+.icon-state.icon8:before {background-position:-86px 0;}/* 교환신청 */
+.icon-state.icon9:before {background-position:-86px -17px;}/* 교환회수지시 */
+.icon-state.icon10:before {background-position:-86px -34px;}/* 교환회수완료 */
+.icon-state.icon11:before {background-position:-86px -51px;}/* 교환완료 */
+.icon-state.icon12:before {background-position:-86px -68px;}/* 반품신청 */
+.icon-state.icon13:before {background-position:-86px -85px;}/* 반품회수지시 */
+.icon-state.icon14:before {background-position:-86px -102px;}/* 반품회수완료 */
+.icon-state.icon15:before {background-position:-86px -119px;}/* 반품완료 */
+
+/* 문의 아이콘*/
+.icon-customer {position:relative;overflow:hidden;display:block;margin:0 0 3px;width:35px;height:14px;vertical-align:top;text-indent:-9999px;}
+.icon-customer:after {display:block;position:absolute;left:0;right:0;top:0;bottom:0;background:url('../img/common/icon-customer.png') 0 0 no-repeat;background-size:200px 100px;content:'';}
+.icon-customer.qna1:after {background-position:0 0;}
+.icon-customer.qna2:after {background-position:-37px 0;}
+.icon-customer.qna3:after {background-position:-74px 0;}
+.icon-customer.qna4:after {background-position:-111px 0;}
+.icon-customer.qna5, .icon-customer.qna6, .icon-customer.qna7 {height:26px;}
+.icon-customer.qna5:after {background-position:0 -16px;}
+.icon-customer.qna6:after {background-position:-37px -16px;}
+.icon-customer.qna7:after {background-position:-74px -16px;}
+
+
+/* 2016-10-21 : 추가 ver3 // */
+/* 주문 결제 카드사 아이콘 */
+.icon-paycard {overflow:hidden;display:inline-block;vertical-align:middle;text-align:left;font-size:12px;font-weight:normal;line-height:1;color:#333;} /* 2016-10-24 : 수정 ver3 */
+/* 2017-04-20 : 수정 : 주문/결제 고도화#1 // */
+.icon-paycard:before {content:"";display:block;width:60px;height:40px;margin:-4px auto 6px;background-size:auto 40px;background-image:url('../img/common/icon-paycard-2019.png');background-repeat:no-repeat;background-position:0 0;vertical-align:top;} /* 2017-05-25 : 수정 : 결제정보 카드 목록 스타일 */
+/* // 2017-04-20 : 수정 : 주문/결제 고도화#1 */
+.on .icon-paycard.icon:before {background-position:0 0;}
+.icon-paycard.icon1:before,
+.on .icon-paycard.icon1:before {background-position:0 0;}
+.icon-paycard.icon2:before,
+.on .icon-paycard.icon2:before {background-position:-60px 0;}
+.icon-paycard.icon3:before,
+.on .icon-paycard.icon3:before {background-position:-120px 0;}
+.icon-paycard.icon4:before,
+.on .icon-paycard.icon4:before {background-position:-180px 0;}
+.icon-paycard.icon5:before,
+.on .icon-paycard.icon5:before {background-position:-240px 0;}
+.icon-paycard.icon6:before,
+.on .icon-paycard.icon6:before {background-position:-300px 0;}
+.icon-paycard.icon7:before,
+.on .icon-paycard.icon7:before {background-position:-360px 0;}
+.icon-paycard.icon8:before,
+.on .icon-paycard.icon8:before {background-position:-420px 0;}
+.icon-paycard.icon9:before,
+.on .icon-paycard.icon9:before {background-position:-480px 0;}
+.icon-paycard.icon10:before,
+.on .icon-paycard.icon10:before {background-position:-540px 0;}
+.icon-paycard.icon11:before,
+.on .icon-paycard.icon11:before {background-position:-600px 0;}
+.icon-paycard.icon12:before,
+.on .icon-paycard.icon12:before {background-position:-660px 0;}
+.icon-paycard.icon13:before,
+.on .icon-paycard.icon13:before {background-position:-720px 0;}
+.icon-paycard.icon14:before,
+.on .icon-paycard.icon14:before {background-position:-780px 0;}
+.icon-paycard.icon15:before,
+.on .icon-paycard.icon15:before {background-position:-840px 0;}
+.icon-paycard.icon17:before,
+.on .icon-paycard.icon17:before {background-position:-900px 0;}
+.icon-paycard.icon18:before,
+.on .icon-paycard.icon18:before {background-position:-960px 0;}/* 2019-06-10 : 추가  */
+/* // 2016-10-21 : 추가 ver3 */
+
+/* 필수 아이콘 */
+.icon-ps {position:relative;overflow:hidden;display:inline-block;margin:0 0 0 5px;width:5px;height:5px;text-indent:-9999px;text-align:left;vertical-align:middle;}
+.icon-ps:before {position:absolute;top:0;left:0;content:'';width:5px;height:5px;background-image:url('../img/common/icons.png');background-repeat:no-repeat;background-position:-16px -16px;background-size:200px 200px;}
+
+/* 아이콘 */
+/** color #333 **/
+.icon-com7.icon6,
+.icon-com10.icon6,
+.icon-com10.icon9,
+.icon-ty4.icon86,
+.icon-ty4.icon87,
+.icon-com10.icon5,
+.icon-com2.icon11,
+.icon-com10.icon10,
+.icon-com10.icon1,
+.icon-com10.icon11,
+.icon-com2.icon8,
+.icon-com10.icon13,
+.icon-com10.icon14,
+.icon-shipping,
+.icon-com10.icon17,
+.icon-com10.icon18,
+.icon-com10.icon19,
+.icon-com10.icon20,
+.favorite-list.list-product1 .list-top .choice-box .online,
+.favorite-list.list-product1 .list-top .choice-box .store,
+.icon-com10.icon22,
+.icon-com10.icon23,
+.icon-com10.icon27,
+.icon-com10.icon28,
+.icon-com10.icon29,
+/* 2020-02-03 : 수정 */
+.icon-com10.icon32,
+.icon-com10.icon34{position:relative;height:14px;margin:0 4px 0 0;vertical-align:top;background:transparent;display:inline-block;}
+/* //2020-02-03 : 수정 */
+.icon-com7.icon6,
+.icon-com10.icon6,
+.icon-ty4.icon86,
+.icon-ty4.icon87,
+.icon-com2.icon11,
+.icon-com10.icon10,
+.icon-com10.icon13,
+.icon-com10.icon22,
+.icon-com10.icon23,
+.icon-com10.icon32,
+/* .icon-com10.icon34, 2020-04-17 : 삭제 */
+.favorite-list.list-product1 .list-top .choice-box .store{width:38px;overflow:hidden;}/* 2019-08-02 : 수정  */
+.icon-com10.icon5,
+.icon-com10.icon1,
+.icon-com10.icon11{width:30px;overflow:hidden;}
+.icon-com2.icon8{width:52px;overflow:hidden;}
+.icon-com10.icon27{width:37px;overflow:hidden;}/* 2020-04-17 : 수정  */
+.icon-com10.icon29{width:37px;overflow:hidden;}/* 2020-04-17 : 수정  */
+/* 2020-04-17 : 수정  */
+.icon-com10.icon18,
+.icon-com10.icon19,
+.icon-com10.icon20,
+.icon-com10.icon34, /* 2020-02-05 : 추가 */
+.icon-com10.icon9,
+.favorite-list.list-product1 .list-top .choice-box .online{width:30px;overflow: hidden;}
+/* //2020-04-17 : 수정  */
+.icon-com10.icon16,.icon-com10.icon17,.icon-com10.icon27,.icon-com10.icon28,.icon-com10.icon29, .icon-com10.icon32, .icon-com10.icon33, .icon-com10.icon34{margin:0!important;}/* 2020-02-03 : 수정 */ /* 2020-02-04 : 수정 */ /* 2020-04-17 : 수정  */
+.favorite-list.list-product1 .list-top .choice-box .online,
+.favorite-list.list-product1 .list-top .choice-box .store{font-size:1px;}
+.ghs-container .list-info5.list li .heading .icon-shipping{width:44px;overflow:hidden;padding:0;margin:0;display:block;clear:both;float:left;text-indent:-9999px;margin-top:5px;}
+/* 2020-04-17 : 수정  */
+.icon-com7.icon6:before,
+.icon-com10.icon6:before,
+.icon-ty4.icon86:before,
+.icon-ty4.icon87:before,
+.icon-com10.icon9:before,
+.icon-com10.icon5:before,
+.icon-com2.icon11:before,
+.icon-com10.icon10:before,
+.icon-com10.icon1:before,
+.icon-com10.icon11:before,
+.icon-com2.icon8:before,
+.icon-com10.icon13:before,
+.icon-com10.icon14:before,
+.ghs-container .list-info5.list li .heading .icon-shipping:before,
+.icon-com10.icon18:before,
+.icon-com10.icon19:before,
+.icon-com10.icon20:before,
+.favorite-list.list-product1 .list-top .choice-box .online:before,
+.favorite-list.list-product1 .list-top .choice-box .store:before,
+.icon-com10.icon22:before,
+.icon-com10.icon23:before,
+.icon-com10.icon102:before,
+/* 2020-02-03 : 수정 */
+.icon-com10.icon32:before{position:absolute;display:block;top:-7px;height:16px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#333;font-weight:bold;text-align:center;border:solid 1px;border-color:#333 #333 #333;background:transparent;transform:scale(0.5);-webkit-transform:scale(0.5);display:inline-block;}
+/* //2020-04-17 : 수정  */
+/* //2020-02-03 : 수정 */
+/* 2019-12-17 : 수정 : 접근성 아이콘 두번 읽어주는거 막기 */
+.icon-com7.icon6{font-size:0;}
+.icon-com7.icon6:before{content:"키오스크";width:72px;left:-18px;}
+.icon-com10{font-size:0;}
+.icon-com10.icon6:before{content:"매장픽업";width:72px;left:-18px;}
+.icon-ty4.icon86{font-size:0;}
+.icon-ty4.icon86:before{content:"매장배송";width:72px;left:-18px;}
+.icon-ty4.icon87:before{content:"매장픽업";width:72px;left:-18px;}
+.icon-com10.icon102:before{content:"택배배송";width:72px;left:-18px;}
+.icon-com10.icon5:before{content:"퀵배송";width:58px;left:-15px;}
+.icon-com2.icon11{font-size:0;}
+.icon-com2.icon11:before{content:"퀵배송";width:58px;padding-right:14px;left:-18px;}/*화살표 있는거*/
+.icon-com10.icon9:before{content:"픽업";width:58px;left:-15px;}
+.icon-com10.icon10:before{content:"택배배송";width:72px;left:-18px;}
+.icon-com10.icon14:before{content:"무료배송";width:72px;left:-18px;}
+.icon-com10.icon1:before{content:"예약";width:58px;left:-15px;}
+.icon-com10.icon11:before{content:"대량";width:58px;left:-15px;}
+.icon-com2.icon8{font-size:0;}
+.icon-com2.icon8:before{content:"쿠폰적용완료";width:102px;left:-26px;}
+.icon-com10.icon13:before{content:"적립완료";width:72px;left:-18px;}
+.icon-com10.icon17:before{content:"적립";width:44px;left:-11px;}/* 2020-04-17 : 수정  */
+.icon-com10.icon18:before{content:"공지";width:58px;left:-15px;}
+.icon-com10.icon19:before{content:"당첨자";width:58px;left:-15px;}
+.icon-com10.icon20:before{content:"이벤트";width:58px;left:-15px;}
+.icon-com10.icon22:before{content:"답변완료";width:72px;left:-18px;}
+.icon-com10.icon23:before{content:"재문의";width:72px;left:-18px;}
+.icon-com10.icon27:before{content:"사용취소";width:74px;left:-18px;} /* 2020-04-17 : 수정  */
+.icon-com10.icon28:before{content:"소멸";width:44px;left:-11px;}/* 2020-04-17 : 수정  */
+.icon-com10.icon29:before{content:"적립취소";width:74px;left:-18px;}/* 2020-04-17 : 수정  */
+.ghs-container .list-info5.list li .heading .icon-shipping{font-size:0;}
+.ghs-container .list-info5.list li .heading .icon-shipping.icon1:before{content:"나의배송지";width:86px;left:-22px;}
+.ghs-container .list-info5.list li .heading .icon-shipping.icon2:before{content:"기본배송지";width:86px;left:-22px;}
+.favorite-list.list-product1 .list-top .choice-box .online{font-size:0;}
+.favorite-list.list-product1 .list-top .choice-box .online:before{content:"온라인";width:58px;left:-15px;}
+.favorite-list.list-product1 .list-top .choice-box .store{font-size:0;}
+.favorite-list.list-product1 .list-top .choice-box .store:before{content:"오프라인";width:72px;left:-18px;}
+.icon-ty4.icon86:after,
+.icon-ty4.icon87:after,
+.icon-com10.icon5:after,
+.icon-com2.icon8:after,
+.favorite-list.list-product1 .list-top .choice-box .online:after,
+.favorite-list.list-product1 .list-top .choice-box .store:after{display:none;}
+.icon-com2.icon11:after{background:none;top:4.5px;left:auto;right:6px;width:4px;height:4px;border:1px solid #333;border-width:1px 0 0 1px;transform:rotate(135deg);-webkit-transform:rotate(135deg);}
+
+/** color #ed1c24 **/
+.icon-com10.icon7,
+.icon-com9.icon3,
+.icon-com2.icon9,
+.icon-com2.icon13, /* 2018-04-23 : 추가 */
+.icon-com10.icon8,
+.icon-com10.icon12,
+.icon-com10.icon12a, /* 2018-03-19 : 추가 */
+.icon-com10.icon102,
+.icon-com2.icon3,
+/* 2020-02-04 : 수정 */
+.icon-com10.icon16,
+.icon-com10.icon33{position:relative;height:14px;margin:0 3px 0 0;vertical-align:top;display:inline-block;background:transparent;}
+/* //2020-02-04 : 수정 */
+.icon-com10.icon7,
+.icon-com10.icon8,
+.icon-com10.icon12,
+.icon-com10.icon12a, /* 2018-03-19 : 추가 */
+.icon-com10.icon14,
+.icon-com10.icon102,
+.icon-com2.icon3{width:38px;overflow:hidden;}
+.icon-com9.icon3,
+.icon-com2.icon13, /* 2018-04-23 : 추가 */
+.icon-com2.icon31,
+.icon-com2.icon9{width:44px;overflow:hidden;}
+/* 2020-04-17 : 수정  */
+.icon-com10.icon16,
+.icon-com10.icon17,
+.icon-com10.icon28,
+.icon-com10.icon34{width:22px;overflow:hidden;}
+/* //2020-04-17 : 수정  */
+.icon-com10.icon33{width:22px;overflow:hidden;} /* 2020-02-04 : 추가 */
+.icon-com10.icon7:before,
+.icon-com9.icon3:before,
+.icon-com2.icon9:before,
+.icon-com2.icon13:before, /* 2018-04-23 : 추가 */
+.icon-com10.icon8:before,
+.icon-com10.icon12:before,
+.icon-com10.icon12a:before, /* 2018-03-19 : 추가 */
+.icon-com2.icon3:before,
+/*.icon-com10.icon16:before, 2020-04-17 : 삭제 */
+.icon-com10.icon26:before,
+.icon-com10.icon30:before,
+/* 2020-02-04 : 수정 */
+.icon-com10.icon31:before,
+.icon-com10.icon33:before{position:absolute;display:block;top:-7px;height:16px;text-indent:0;font-size:16px;line-height:16px;padding:5px 0;color:#ed1c24;font-weight:bold;text-align:center;background:transparent;border:solid 1px;border-color:#ed1c24 #ed1c24 #ed1c24;transform:scale(0.5);-webkit-transform:scale(0.5);}
+/* //2020-02-04 : 수정 */
+.icon-com10.icon7:before{content:"매장상품";width:72px;left:-18px;}
+.icon-com9.icon3{font-size:0;}
+.icon-com9.icon3:before{content:"퀵배송불가";width:86px;left:-22px;}
+.icon-com2.icon9{font-size:0;}
+.icon-com2.icon9:before{content:"쿠폰미적용";width:86px;left:-22px;}
+.icon-com2.icon13{font-size:0;}
+.icon-com2.icon13:before{content:"멤버십쿠폰";width:86px;left:-22px;} /* 2018-04-23 : 추가 */
+.icon-com10.icon8:before{content:"택배상품";width:72px;left:-18px;}
+.icon-com10.icon12:before{content:"적립예정";width:72px;left:-18px;}
+.icon-com10.icon12a:before{content:"적립불가";width:72px;left:-18px; background-color:#ed1c24; color:#fff;} /* 2018-03-19 : 추가 */
+.icon-com2.icon3{font-size:0;}
+.icon-com2.icon3:before{content:"추가증정";width:72px;left:-18px;}
+.icon-com10.icon16:before{content:"사용";width:44px;left:-11px;}/* 2020-04-17 : 수정  */
+.icon-com10.icon26:after,
+.icon-com10.icon30:after,
+.icon-com10.icon31:after,
+/* 2020-02-03 : 수정 */
+.icon-com10.icon32:after,
+.icon-com10.icon34:after {display:inline-block;content:"";height:18px;}
+/* //2020-02-03 : 수정 */
+.icon-com10.icon26:before {content:"싸데이가";width:72px;left:-18px;border-radius:16px;}
+.icon-com10.icon30:before {content:"타임특가";width:72px;left:-18px;border-radius:16px;}
+.icon-com10.icon31:before {content:"투데이특가";width:86px;left:-18px;border-radius:16px;}
+.icon-com10.icon32:before {content:"업체배송";width:72px;left:-18px;}/* 2019-08-02 : 추가 */
+.icon-com10.icon33:before{content:"증정";width:42px;left:-11px;} /* 2020-02-04 : 추가 */
+.icon-com10.icon34:before {content:"회수";width:44px;left:-11px;} /* 2020-02-05 : 수정 *//* 2020-04-17 : 수정  */
+
+.icon-com2.icon9:after,
+.icon-com2.icon13:after, /* 2018-04-23 : 추가 */
+.icon-com9.icon3:after,
+.icon-com2.icon3:after{display:none;}
+/** bg-color #ed1c24 **/
+.icon-com10.icon4,
+.icon-com10.icon2,
+.icon-com10.icon15{position:relative;height:14px;margin:0 3px 0 0;vertical-align:top;background:transparent;}
+/* 2020-04-17 : 수정  */
+.icon-com10.icon4,
+.icon-com10.icon15,
+.icon-com10.icon26,
+.icon-com10.icon30{width:38px;overflow:hidden;}
+.icon-com10.icon2{width:30px;overflow:hidden;}
+.icon-com10.icon4:before,
+.icon-com10.icon2:before,
+.icon-com10.icon15:before,
+.icon-com10.icon16:before{position:absolute;display:block;top:-7px;height:18px;text-indent:0;font-size:16px;padding:6px 0;line-height:16px;color:#fff;background:#ed1c24;font-weight:bold;text-align:center;transform:scale(0.5);-webkit-transform:scale(0.5);}
+/* //2020-04-17 : 수정  */
+
+.icon-com10.icon4:before{content:"대체상품";width:72px;left:-18px;}
+.icon-com10.icon2:before{content:"합배송";width:60px;left:-15px;}
+.icon-com10.icon15:before{content:"종료임박";width:72px;left:-18px;}
+
+/* 2020-04-17 : 추가 */
+/** bg-color #111 **/
+.icon-com10.icon27:before,
+.icon-com10.icon17:before{position:absolute;display:block;top:-7px;height:18px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#fff;font-weight:bold;text-align:center;background:#111;transform:scale(0.5);-webkit-transform:scale(0.5); }
+
+/** bg-color #aaa **/
+.icon-com10.icon28:before,
+.icon-com10.icon29:before,
+.icon-com10.icon34:before{position:absolute;display:block;top:-7px;height:18px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#fff;font-weight:bold;text-align:center;background:#aaa;transform:scale(0.5);-webkit-transform:scale(0.5); }
+/* //2020-04-17 : 추가 */
+
+/** color #ff5160 **/
+.icon-com2.icon2{position:relative;height:14px;margin:0 3px 0 0;vertical-align:top;background:transparent;}
+.icon-com2.icon2{width:30px;overflow:hidden;}
+.icon-com2.icon2:before{position:absolute;display:block;top:-7px;height:16px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#ff5160;font-weight:bold;text-align:center;background:transparent;border:solid 1px;border-color:#ff5160 #ff5160 #ff5160;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.icon-com2.icon2{font-size:0;}
+.icon-com2.icon2:before{content:"쿠폰";width:58px;left:-15px;}
+.icon-com2.icon2:after{display:none;}
+
+
+/** color #ff7e00 **/
+.icon-com2.icon1{position:relative;width:52px;height:14px;margin:0 3px 0 0;vertical-align:top;background:transparent;overflow:hidden;font-size:0;}
+.icon-com2.icon1:before{position:absolute;display:block;top:-7px;height:16px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#ff7e00;;font-weight:bold;text-align:center;background:transparent;border:solid 1px;border-color:#ff7e00 #ff7e00 #ff7e00;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.icon-com2.icon1:before{content:"카드즉시할인";width:102px;left:-26px;}
+.icon-com2.icon1:after{display:none;}
+
+.icon-com9.icon1{width:60px;overflow:hidden;font-size:0;}
+.icon-com9.icon1:before{position:absolute;display:block;top:-7px;height:16px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#ff7e00;;font-weight:bold;text-align:center;background:transparent;border:solid 1px;border-color:#ff7e00 #ff7e00 #ff7e00;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.icon-com9.icon1:before{content:"카드즉시할인";width:102px;left:-30px;padding-right:16px;}
+.icon-com9.icon1:after{background:none;top:4.5px;left:auto;right:6px;width:4px;height:4px;border:1px solid #ff7e00;border-width:1px 0 0 1px;transform:rotate(135deg);-webkit-transform:rotate(135deg);}
+
+/* bg-color #ccc */
+.icon-com10.icon21{width:38px;position:relative;height:14px;margin:0 4px 0 0;vertical-align:top;overflow:hidden;display:inline-block;text-indent:-999999px;font-size:0;}
+.icon-com10.icon21:before{content:"답변대기";width:72px;position:absolute;display:block;top:-7px;height:16px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#fff;font-weight:bold;text-align:center;background:#ccc;border:solid 1px;border-color:#ccc #ccc #ccc;transform:scale(0.5);-webkit-transform:scale(0.5);left:-18px;}
+
+/* bg-color #eee */
+.icon-com10.icon24{width:38px;position:relative;height:14px;margin:0 3px 0 0;vertical-align:top;overflow:hidden;display:inline-block;text-indent:-999999px;font-size:0;}
+.icon-com10.icon24:before{content:"문의취소";width:72px;position:absolute;display:block;top:-7px;height:16px;text-indent:0;font-size:16px;padding:5px 0;line-height:16px;color:#ccc;font-weight:bold;text-align:center;background:#eee;border:solid 1px;border-color:#ddd #ddd #ddd;transform:scale(0.5);-webkit-transform:scale(0.5);left:-18px;}
+
+/* color #46aec5 */
+/* 2019-05-29 : 수정  */
+.icon-com10.icon25{width:42px;position:relative;height:14px;margin:0 3px 0 0;vertical-align:top;overflow:hidden;display:inline-block;text-indent:-999999px;font-size:0;}
+.icon-com10.icon25:before{content:"마일리지";width:82px;position:absolute;display:block;top:-7px;height:16px;text-indent:-14px;font-size:16px;padding:5px 0;line-height:16px;color:#46aec5;font-weight:bold;text-align:center;background:#fff;border:solid 1px;border-color:#46aec5 #46aec5 #46aec5;transform:scale(0.5);-webkit-transform:scale(0.5);left:-21px;}
+.icon-com10.icon25:after{content:'';width: 5px;height: 8px; position:absolute;top: 3px;right: 2px; background: url(../img/common/icons3.png) no-repeat -130px -38px; background-size:200px auto;} /* 2019-09-02 : 수정  */
+/* //2019-05-29 : 수정  */
+/* //2019-12-17 : 수정 : 접근성 아이콘 두번 읽어주는거 막기 */
+.exclamation{width:12px;height:12px;position:relative;display:inline-block;text-indent:-9999px;vertical-align: top; margin-top: 1px;}
+.exclamation:after{content:'';width:12px;height:12px;position:absolute;top:-2px;left:0;right:0;bottom:0;background-size:200px 200px;background-image:url(../img/common/icons_1.png);background-repeat:no-repeat;background-position:-132px 0;}/* 2019-02-18 : 수정  */
+
+/* icon-ty1 (상품 리스트에 출력되는 아이콘) */
+.icon-ty1.icon01:after{background-position:0 -329px;} /* 균일가 */
+.icon-ty1.icon02:after{background-position:-37px -329px;} /* 행사상품 */
+.icon-ty1.icon03:after{background-position:-74px -329px;} /* 사은품증정 */
+.icon-ty1.icon04:after{background-position:-111px -329px;} /* 세트상품 */
+.icon-ty1.icon05:after{background-position:-148px -329px;} /* 추가증정 */
+
+/* icon-ty4 (상품상세에 이벤트로 추가되는 아이콘) */
+.icon-ty4.icon01{width:25px!important;} /* 균일가 */
+.icon-ty4.icon02{width:31px!important;} /* 행사상품 */
+.icon-ty4.icon03{width:39px!important;} /* 사은품증정 */
+.icon-ty4.icon04{width:31px!important;} /* 세트상품 */
+.icon-ty4.icon05{width:31px!important;} /* 추가증정 */
+
+.icon-ty4.icon01:after{width:25px!important;background-position:0 -168px;} /* 균일가 */
+.icon-ty4.icon02:after{width:31px!important;background-position:-29px -168px;} /* 행사상품 */
+.icon-ty4.icon03:after{width:39px!important;background-position:-64px -168px;} /* 사은품증정 */
+.icon-ty4.icon04:after{width:31px!important;background-position:-107px -168px;} /* 세트상품 */
+.icon-ty4.icon05:after{width:31px!important;background-position:-143px -168px;} /* 추가증정 */
+.icon-ty4.icon86:before,
+.icon-ty4.icon87:before,
+.icon-com2:before,
+.icon-com9:before,
+.icon-com10:before{padding-top:6px!important;padding-bottom:4px!important;}
+
+.icon-tooltip{ display:inline-block; content:''; overflow:hidden; width:12px; height:12px; background:url(../img/common/icons_1.png) -132px 0 no-repeat; background-size:200px 200px; font-size:0; vertical-align:middle; text-indent:-999px; }
+
+/* 2019-09-16 : 추가 */
+.icon-tooltip2 {display:inline-block;position:relative;z-index:1;width:18px;height:18px;margin-top:-3px;overflow:hidden;text-indent:-999px;vertical-align:middle;}
+.icon-tooltip2:after{content: ""; position:absolute; left:0;bottom:0; width:100%;height:100%; background:url(../img/common/icon-2019.png) no-repeat 0 -670px; background-size:300px auto; }
+/* //2019-09-16 : 추가 */
+
+/* 나의 홈플러스 포인트 아이콘*/
+.icon_point:after {content:"";display:inline-block;width:12px;height:12px;margin-left:3px;background:url(../img/common/icons_1.png) -132px 0 no-repeat;background-size:200px auto;}
+
+/* 2019-08-20 : 추가 */
+.icon-receipt{display:inline-block;overflow:hidden;position:relative;text-indent:-999px;width:28px;height:28px;border:1px solid #ddd;vertical-align:middle;box-sizing:border-box;}
+.icon-receipt:after{display:inline-block;content:'';position:absolute;top:4px;left:4px;width:17px;height:17px;background:url(../img/common/icon-2019.png) no-repeat -25px -150px;background-size:300px auto;overflow:hidden;}
+/* //2019-08-20 : 추가 */
+
+/* 2020-04-22 : 추가 */
+.icon-del{display:inline-block;position:relative;width:20px;height:20px;font-size:1px;color:transparent;text-indent:-999px;line-height:0;}
+.icon-del:after {display:inline-block;content:'';position:absolute;top:0;left:0;width:20px;height:20px;background:url(../img/common/icons_4.png) -50px -20px no-repeat;background-size:200px auto;} /* 2020-04-22 : 추가 */
+/* //2020-04-22 : 추가 */
+
+/* 2019-06-12 : 추가 */
+/* iphone5 이하에서 적용 */
+@media only screen and (device-width :320px) {
+	.ssize-br{display:block;font-style:normal;}/* <br> 효과 */
+}
+/* //2019-06-12 : 추가 */
+
+/* 사이즈 커진 버젼 */
+.ui-sizeup .icon-ty2.arr6 {width:18px;height:10px;}
+.ui-sizeup .icon-ty2.arr6:after {background:url(../img/common/icon-2019.png) no-repeat 0 0; background-size:300px auto; background-position:-0px -554px;-webkit-transition:transform 0.3s ease;transition:transform 0.3s ease;}
+.ui-sizeup .icon-ty2.arr6.open:after, .icon-ty2.arr6.on:after, .toggle.open .icon-ty2.arr6:after {-webkit-transform:rotate(-180deg);transform:rotate(-180deg);}
+/* 2019-06-11 : 추가 */
+.ui-sizeup .icon-ty2.arr7{width:6px;height:17px;}
+.ui-sizeup .icon-ty2.arr7:after { background:url(../img/common/icon-2019.png) no-repeat -10px 0; background-size:300px auto; }
+/* //2019-06-11 : 추가 */
+
+.ui-sizeup .exclamation{width:18px;height:18px;position:relative;display:inline-block;text-indent:-9999px;vertical-align: top; margin-top: 1px;}
+.ui-sizeup .exclamation:after{content:'';width:100%;height:100%;position:absolute;top:-2px;left:0;right:0;bottom:0;background:url(../img/common/icon-2019.png) no-repeat 0 -670px; background-size:300px auto;}
+
+.ui-sizeup .icon-ty2.file{ width:17px; height:14px;}
+.ui-sizeup .icon-ty2.file:after{ background:url(../img/common/icon-2019.png) no-repeat -33px -467px;  background-size:300px auto;}
+
+.ghs-container .ui-sizeup .info-star,
+.ghs-container .ui-sizeup .info-star:after{ background:url(../img/common/icon-2019.png) no-repeat; background-size:300px auto;}
+.ghs-container .ui-sizeup .info-star{ width:108px; height:19px; background-position:-33px -691px;}
+.ghs-container .ui-sizeup .info-star:after{ background-position:-33px -670px;}
+.ghs-container .ui-sizeup .info-star.star1:after {width:20px;}
+.ghs-container .ui-sizeup .info-star.star2:after {width:42px;}
+.ghs-container .ui-sizeup .info-star.star3:after {width:64px;}
+.ghs-container .ui-sizeup .info-star.star4:after {width:86px;}
+.ghs-container .ui-sizeup .info-star.star5:after {width:106px;}
+.ghs-container .ui-sizeup .info-star.star0-5:after {width:10px;}
+.ghs-container .ui-sizeup .info-star.star1-5:after {width:33.5px;}
+.ghs-container .ui-sizeup .info-star.star2-5:after {width:54px;}
+.ghs-container .ui-sizeup .info-star.star3-5:after {width:76px;}
+.ghs-container .ui-sizeup .info-star.star4-5:after {width:98px;}
+.ghs-container .ui-sizeup .small-star .info-star{ width:72px;}
+
+.ghs-container .ui-sizeup .section-product .mes-result.health:before { width:50px; height:50px; background:url(../img/common/icon-2019.png) no-repeat -63px -480px; background-size:300px auto;}
+
+.ghs-container .ui-sizeup .list-review2>li{ min-height:121px; padding:29px 16px 16px 92px; }
+.ghs-container .ui-sizeup .list-review2>li .icon{ top:0; left:15px; padding-top:85px; margin-top:0; font-size:14px; white-space:nowrap }
+.ghs-container .ui-sizeup .list-review2>li .icon:before{ top:25%; margin-left:-21px; width:44px; height:44px; background:url(../img/common/icon-2019.png) no-repeat; background-size:300px auto; }
+.ghs-container .ui-sizeup .list-review2>li .icon.review1:before{ background-position:-50px -265px;}
+.ghs-container .ui-sizeup .list-review2>li .icon.review2:before{ background-position:-100px -265px;}
+.ghs-container .ui-sizeup .list-review2>li .icon.review3:before{ background-position:-50px -315px;}
+.ghs-container .ui-sizeup .list-review2>li .icon.review4:before{ background-position:-100px -315px;}
