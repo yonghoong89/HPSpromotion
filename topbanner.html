@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>홈플러스 이벤트쿠폰 상세</title>	       
+<title>홈플러스 배너모듈</title>	       
 <meta charset="UTF-8">
 <meta http-equiv="imagetoolbar" content="no">
 <meta property="og:site_name" content="홈플러스 온라인">
@@ -44,10 +44,74 @@
 </head>
 <body>
 	<div class="section__promotion-module">
-		<div class="section__top-banner">
-			dd
+		<!-- To dev : 어드민 설정 배경컬러값 -->
+		<div class="section__banner" style="background-color:#ccc">
+			<!-- To dev : 어드민 설정 배경이미지 -->
+			<div class="box__banner" style="background-image:url(http://hi.esmplus.com/b/2020/10/28/160387017786664kxgbe.png)">
+				<div class="box__banner-inner box__banner-inner--dim">
+					<div class="box__information">
+						<h2 class="text__banner-title">
+							<span class="text__title">타이틀 라인1 타이틀 라인1 title</span>
+							<span class="text__title">타이틀 라인2 title</span>
+						</h2>
+						<p class="text__event-date">이벤트기간 : 2020.12.03 ~ 2020.12.03</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 <script type="text/javascript" src="https://www.homeplus.co.kr/GHS/mart/common/scripts/jquery-1.10.2.min.js"></script>
+<div class="box__guide">
+	* 마크업확인 가이드 소스 입니다.(개발시 제거)
+	<p class="text__guide-title">1. 배경 컬러코드(ex :#0066cc)</p>
+	<div class="box__option">
+		<input type="text" class="form__text" id="background-color"><button type="button" class="button__apply">적용</button>
+	</div>
+	<p class="text__guide-title">2. 타이틀정렬</p>
+	<div class="box__option">
+		<a href="#type1" class="button__guide">왼쪽</a>
+		<a href="#type2" class="button__guide">오른쪽</a>
+		<a href="#type3" class="button__guide">가운데</a>
+	</div>
+	<p class="text__guide-title">3. 타이틀 컬러코드(ex :#0066cc)</p>
+	<div class="box__option">
+		<input type="text" class="form__text" id="title-color"><button type="button" class="button__apply">적용</button>
+	</div>
+	<p class="text__guide-title">4. 딤드</p>
+	<div class="box__option">
+		<a href="#type4" class="button__guide">적용/미적용</a>
+	</div>
+</div>
+<script>
+$('.button__guide').on('click', function(){
+	var attrType = $(this).attr('href')
+	switch(attrType){
+		case '#type1': 
+			$('.box__information').removeClass().addClass('box__information').addClass('box__information--left')
+		break;
+		case '#type2': 
+			$('.box__information').removeClass().addClass('box__information').addClass('box__information--right')
+		break;
+		case '#type3': 
+			$('.box__information').removeClass().addClass('box__information').addClass('box__information--center')
+		break;
+		case '#type4': 
+			$('.box__banner-inner').toggleClass('box__banner-inner--dim')
+		break;
+	}
+	return false;
+});
+
+$('.button__apply').on('click', function(){
+	var colorCode = $(this).prev().val()
+	if($(this).prev().is('#background-color')){
+		$('.section__banner').css('background-color',colorCode)
+	}else if($(this).prev().is('#title-color')){
+		$('.box__information').css('color',colorCode)
+	}
+	
+	return false;
+});
+</script>
 </body>
 </html>

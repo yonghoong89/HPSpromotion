@@ -1,1 +1,26 @@
-.section__top-banner{height:400px}
+.section__promotion-module{min-width:1200px}
+.box__banner{background-repeat:no-repeat;background-position:50% 0}
+
+
+
+
+.box__banner-inner{position:relative;width:1200px;height:400px;margin:0 auto}
+.box__banner-inner.box__banner-inner--dim:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background-color:#000;opacity:0.2}
+
+.box__information{position:relative;z-index:10;padding:60px 60px 0;color:#fff}
+.box__information.box__information--left{text-align:left}
+.box__information.box__information--center{text-align:center}
+.box__information.box__information--right{text-align:right}
+.box__information .text__banner-title .text__title{display:block;font-size:40px;line-height:50px}
+.box__information .text__event-date{display:block;margin-top:10px;font-size:16px;line-height:20px}
+
+
+
+
+.box__guide{padding:50px;max-width:1200px;margin:0 auto}
+.text__guide-title{margin-top:20px;font-size:16px;color:#484848}
+.button__apply{background-color:#ccc;color:#484848}
+.button__guide{display:inline-block;margin-right:5px;font-size:14px;}
+.box__option{margin-top:5px}
+.box__option .form__text{height:25px;box-sizing:border-box}
+.box__option .button__apply{height:25px;padding:0 10px}
