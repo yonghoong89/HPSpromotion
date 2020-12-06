@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+*{margin:0;padding:0}
+html, body{height:100%;font-size:12px;font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', sans-serif;}
+ul,ol{list-style:none}
+button{-webkit-border-radius:0;border-radius:0;background-color:transparent;cursor:pointer;border:0;outline:0}
+a,a:hover,a:active,a:focus{text-decoration:none}
+em,address{font-style:normal}
+table{border-collapse:collapse;border-spacing:0}
+iframe,fieldset,img{border:0 none}
+textarea{resize:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+img{vertical-align:top}
+hr{display:none}
+.for-a11y{display:block;overflow:hidden;position:absolute;top:-1000em;left:0;font-size:0;line-height:0;text-indent:-1000em}
+
+#event__wrapper{overflow:auto;width:100%;height:100%;text-align:center}
+.box__event--header,
+.box__delivery-event{min-width:980px;margin:0 auto}
+.box__top--visual{height:710px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__top.jpg') no-repeat 50% 0;background-size:auto 100%;}
+.box__delivery-top{height:429px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__guide-top.jpg') no-repeat 50% 0;background-size:auto 100%;}
+
+.box__stamp-top{height:1068px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__benefit-top.jpg') no-repeat 50% 0;background-size:auto 100% ;}
+.box__stamp-benefit{position:relative;height:1108px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__benefit-con.jpg') no-repeat 50% 0;background-size:auto 100%;}
+.box__stamp-benefit .order-count{width:940px;margin:0 auto;font-size:48px;font-weight:bold;color:#ff6600;letter-spacing:-1px;text-align:center;}
+.list__stamp-benefit .box__couponbase{position:absolute;width:630px;height:546px;top:100px;left:50%;margin-left:-315px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__couponbase.jpg') no-repeat 50% 0;background-size:auto 100%}
+.list__stamp-benefit ol li{position:absolute;display:block}
+.box__stamp-benefit .list-item--stamp1{width:210px;height:180px;top:0;left:0}
+.box__stamp-benefit .list-item--stamp2{width:210px;height:180px;top:0;left:210px}
+.box__stamp-benefit .list-item--stamp3{width:210px;height:180px;top:0;left:420px}
+.box__stamp-benefit .list-item--stamp4{width:210px;height:180px;top:181px;left:420px}
+.box__stamp-benefit .list-item--stamp5{width:210px;height:180px;top:181px;left:210px}
+.box__stamp-benefit .list-item--stamp6{width:210px;height:180px;top:181px;left:0}
+.box__stamp-benefit .list-item--stamp7{width:210px;height:180px;top:364px;left:0}
+.box__stamp-benefit .list-item--stamp8{width:210px;height:180px;top:364px;left:210px}
+.box__stamp-benefit .list-item--stamp9{width:210px;height:180px;top:364px;left:420px}
+
+.box__stamp-benefit .list-item--stamp1.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp01.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp2.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp02.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp3.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp03.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp4.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp04.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp5.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp05.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp6.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp06.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp7.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp07.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp8.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp08.png') no-repeat;background-size:100% auto;}
+.box__stamp-benefit .list-item--stamp9.list-item--active{background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__stamp09.png') no-repeat;background-size:100% auto;}
+
+
+.box__delivery-event{position:relative}
+.box__delivery-event .link__coupon{position:absolute;left:670px;width:560px;height:80px}
+.box__delivery-event .button__content-notice{position:absolute;left:50%;bottom:170px;width:300px;height:100px;margin-left:-150px;border:0}
+.box__event-layer{display:none;position:absolute;right:0;left:0;z-index:100;transform: translateZ(1px);}
+.box__event-layer .button__close-layer{position:absolute;width:100%;height:100%;left:0;top:0;text-indent:-9999px;border:0;background:#000;opacity:0}
+
+.box__delivery-benefit .box__event-layer{top:910px}
+.box__delivery-deal .box__event-layer{top:1345px}
+
+/* Swiper*/
+.list__guide-wrap{position:relative;height:801px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__guide-con.jpg') no-repeat 50% 0;background-size:auto 100%;}
+.box__slide-wrap{position:absolute;top:-33px;width:820px;height:590px;left:50%;margin-left:-405px;overflow:hidden;}
+.box__slide-wrap .swiper-button-prev,.box__slide-wrap .swiper-button-next{position:absolute;top:50%;margin-top:-8px;width:50px;height:50px;z-index:10;}
+.box__slide-wrap .swiper-button-prev{background: url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__arrow-prev.png') no-repeat left top;left:-4px}
+.box__slide-wrap .swiper-button-next{background: url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__arrow-next.png') no-repeat left bottom;right:5px}
+.swiper-container{width:100%;height:100%;color:#fff;text-align:center}
+.swiper-pagination{width:100%;position:absolute;left:0px;bottom:23px;z-index:20;text-align:center}
+.swiper-pagination-switch{display:inline-block;width:12px;height:12px;border-radius:50%;background:#7f7f7f;margin-right:24px;cursor:pointer}
+.swiper-pagination-switch.swiper-visible-switch.swiper-active-switch{background:#eb383b}
+.swiper-pagination-switch:last-child{margin-right:9px}
+.dim{display:block;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10;background:#000;opacity:0.5;filter:alpha(opacity=50)}
+
+.box__quiz-top{height:465px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__quiz-top.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__quiz-area{position:relative;height:852px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__quiz-con.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__quiz-area .quiz-image {position:absolute;width:416px;height:415px;top:43px;left:50%;margin-left:-385px}
+.box__quiz-area .quiz-image>img{width:100%}
+.box__delivery-quiz .list__quiz-wrap{position:absolute;width:350px;left:50%;top:140px;margin-left:81px}
+.box__delivery-quiz .list__quiz-wrap li{margin-bottom:47px}
+.box__delivery-quiz .list__quiz-wrap .list-item-quiz{display:block;position:relative;padding-left:35px;cursor:pointer;font-size:22px;line-height:22px;text-align:left;letter-spacing:-1px;font-weight:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.box__delivery-quiz .list__quiz-wrap .list-item-quiz input{position:absolute;opacity:0;cursor:pointer;height:0;width:0;}
+.box__delivery-quiz .list__quiz-wrap .list-item-quiz .checkmark{position:absolute;top:0;left:0;height:20px;width:20px;background-color:#f7fef6;border-radius:50%;border:2px solid #b6bbb6;}
+.box__delivery-quiz .list__quiz-wrap .list-item-quiz input:checked ~ .checkmark{background-color:#f7fef6;border:2px solid #366637}
+.box__delivery-quiz .list__quiz-wrap .list-item-quiz .checkmark:after{content:"";position:absolute;display:none;}
+.box__delivery-quiz .list__quiz-wrap .list-item-quiz input:checked ~ .checkmark:after{display:block;}
+.box__delivery-quiz .list__quiz-wrap .list-item-quiz .checkmark:after{top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#366637;}
+.box__delivery-quiz .link__coupon{top:502px;}
+
+.box__deal-top{height:523px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__deal-top.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__deal-list{height:1021px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__deal-con.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__deal-list .list__deal-coupon{position:relative;width:840px;height:301px;margin:0 auto;}
+.box__deal-list .list__deal-coupon.toss-everyone{padding-top:60px;}
+.box__deal-list .list__deal-coupon.toss-money{padding-top:30px;}
+.box__deal-list .link__coupon{position:absolute;width:320px;height:70px;top:223px;left:455px;}
+
+.box__smileclub-top{height:439px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__smileclub-top.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__smileclub-con{position:relative;height:1131px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__smileclub-con.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__smileclub-con .link__coupon{top:781px;}
+
+.box__deliverygo-top{height:502px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__deliverygo-top.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__deliverygo-con{position:relative;height:1066px;background:url('http://image.gmarket.co.kr/Gmkt_Event/2019/08/0829_gmarketdelivery/image__deliverygo-con.jpg') no-repeat 50% 0;background-size:auto 100%}
+.box__deliverygo-con .link__coupon{top:608px;}
+
+/*popup*/
+.box__layer{position:fixed;z-index:1000;top:0;left:0;bottom:0;right:0}
+.box__layer:after{content:'';position:absolute;left:0;top:0;right:0;bottom:0;background-color:#000;opacity:0.5}
+.box__alert-coupon{position:fixed;left:50%;top:50%;width:100%;transform:translate(-50%, -50%);z-index:10;}
+.box__layer .button__close-layer,
+.button__close-layer{position:absolute;left:0;top:0;width:100%;height:100%;text-indent:-9999px;border:0;background:#000;opacity:0}
+
+.box__layer .box__quiz-coupon{position:relative;width:940px;height:100%;padding-top:50px;box-sizing:border-box;overflow-y:scroll;-ms-overflow-style:none}
+.box__layer .box__quiz-coupon::-webkit-scrollbar{display:none}
+.box__layer .box__quiz-coupon:after{display:block;content:'';clear:both;height:50px;}
+.box__layer .box__quiz-coupon .button__smileclub{position:absolute;width:300px;height:60px;left:433px;top:945px}
+.box__layer .box__quiz-coupon .button__close-layer{position:absolute;width:100%;height:700px;background:#000;opacity:0}
+.box__layer .box__deal-smileclub{position:relative;width:940px}
+.box__layer .box__deal-smileclub .button__agree{position:absolute;width:200px;height:60px;left:255px;top:220px}
+.box__layer .box__deal-smileclub .button__disagree{width:200px;height:60px;left:485px;top:220px}
+
+.box__stamp-bromide{width:940px;height:100%;padding-top:50px;box-sizing:border-box;overflow-y:scroll;-ms-overflow-style:none}
+.box__stamp-bromide::-webkit-scrollbar{display:none;}
+.box__stamp-bromide::after{display:block;content:'';clear:both;height:50px}
+.box__stamp-bromide .button__agree,
+.box__stamp-bromide .button__disagree{position:absolute;width:200px;height:60px;top:239px;cursor:pointer;}
+.box__stamp-bromide .button__agree{left:255px;}
+.box__stamp-bromide .button__disagree{left:486px;}
+
+.box__layer-scroll{position: absolute;right:-16px;overflow-y:auto}

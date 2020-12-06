@@ -1,0 +1,88 @@
+#pm_wrap{overflow:hidden;max-width:640px;margin:0 auto}
+
+.evt{position:relative}
+.evt a{display:block}
+.evt img,.m_img{display:block;width:100%}
+
+.top{z-index:-1}
+.top .blank{position:absolute;top:0;left:0;width:100%;height:100%}
+.top .blank .top_bg{position:fixed;-webkit-backface-visibility: hidden;-webkit-transform: translateZ(0);transform: translateZ(0);}
+.top .blank .txt_bg{position:absolute;top:0;left:0;right:0;width:100%}
+.app .top_bg{top:0 !important}
+
+.scroll_arrow{position:absolute;bottom:5%;left:50%;width:7.8125%;margin-left:-14px}
+.scroll_arrow img, .scroll_arrow .dot img{width:100%}
+.scroll_arrow .dot{position:absolute;top:15%;left:42%;width:16%;height:12%;-webkit-animation: dot 5s infinite;animation: dot 1.2s infinite;background-color:#dfbe3c;border-radius:50%}
+
+.sec1,.sec2,.sec3,.sec4,.sec5{z-index:5;background:#fff}
+.sec4,.sec5{position:static}
+.sec1{border-bottom:1px solid #eaeaea}
+.sec1 .movie{position:absolute;top:0;left:0%;right:0%;height:100%}
+.sec1 .ifrm_movie{width:100%;height:100%}
+
+.slide{position:absolute;top:0;left:0;right:0;width:100%}
+.slide01,.slide02{overflow:hidden}
+.swiper-pagination{display:inline-block;left:25%;bottom:3%;width:50%}
+.swiper-pagination-bullet{width:10px;height:10px;margin:0 3%;padding-bottom:4px;border:1px solid #000;background:#000;box-sizing:border-box;opacity:1;box-shadow:1px 3px #e5e5e5;-webkit-box-shadow:1px 3px #e5e5e5}
+.swiper-pagination-bullet-active{background:none;opacity:1}
+.swiper-button-prev,.swiper-button-next{margin-top:-7%}
+.swiper-button-prev{left:4%}
+.swiper-button-next{right:4%}
+
+.sec3_2{padding-bottom:6%}
+.slide02 .swiper-slide{width:52.5%;margin-left:2.19%}
+.slide02 .swiper-slide:first-child{margin-left:7.5%}
+.slide02 .swiper-slide .msg{position:absolute;top:20%;left:6%;width:88%;font-size:0.8em;line-height:1.6em;text-align:center}
+.slide02 .swiper-slide .msg .txt,.slide02 .swiper-slide .msg .id{display:block;overflow:hidden;padding:10px;word-wrap:break-word;text-overflow:ellipsis}
+.slide02 .swiper-slide .msg .txt{display:-webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical; /* line-height 가 2em 이고 3라인을 자르기 때문에 height는 2em * 3 = 6em */}
+.slide02 .swiper-slide .msg .id{padding-top:0;padding-bottom:0}
+@media only screen and (min-width:300px){
+.slide02 .swiper-slide .msg{top:23%;left:4%;width:90%;font-size:0.8em;line-height:1.8em;height:5.4em}
+.slide02 .swiper-slide .msg .txt,.slide02 .swiper-slide .msg .id{padding:5px}
+.slide02 .swiper-slide .msg .id{padding-top:0;padding-bottom:0}
+}
+@media only screen and (min-width:400px){
+.slide02 .swiper-slide .msg{top:20%;left:6%;width:84%;font-size:0.9em;line-height:1.9em;height:5.7em}
+.slide02 .swiper-slide .msg .txt,.slide02 .swiper-slide .msg .id{padding:10px}
+.slide02 .swiper-slide .msg .id{padding-top:0;padding-bottom:0}
+}
+@media only screen and (min-width:600px){
+.slide02 .swiper-slide .msg{top:20%;left:9%;width:80%;font-size:1.4em;line-height:2.2em;height:6.6em;}
+.slide02 .swiper-slide .msg .txt,.slide02 .swiper-slide .msg .id{padding:10px}
+.slide02 .swiper-slide .msg .id{padding-top:0;padding-bottom:0}
+}
+
+.sec3 .txtbox{position:absolute;top:46%;left:25%;width:50%;height:25%}
+.sec3 .txtbox textarea{overflow:hidden;width:90%;height:90%;padding:5%;border:none;text-align:center;resize:none}
+.sec3 .txtbox .txt_msg{font-size:0.8em;line-height:2.4em}
+@media only screen and (min-width:400px){
+.sec3 .txtbox{left:21%;width:58%}
+.sec3 .txtbox .txt_msg{font-size:1.2em;line-height:2em}
+}
+@media only screen and (min-width:600px){
+.sec3 .txtbox{left:25%;width:50%}
+.sec3 .txtbox .txt_msg{font-size:1.6em;line-height:2.6em}
+}
+.sec3 .btn_write{position:absolute;left:35%;bottom:10%;width:30%;height:8%;text-indent:-9999px}
+
+.pop{display:none;position:absolute;top:0;right:0;left:0;z-index:100;transform: translateZ(1px);}
+.pop.v1{top:-400%}
+.pop.v2{top:49%}
+.pop.v3{top:100%}
+.btn_close{position:absolute;top:0;left:0;width:100%;height:100%;text-indent:-9999px}
+.btn_close2{position:absolute;top:0;right:0;width:19%;height:14%;text-indent:-9999px}
+
+/*마우스 애니메이션*/
+@-webkit-keyframes dot {
+	0%   {top:15%}
+    50% {top:40%}
+    100% {top:15%}
+}
+@keyframes dot {
+	0%   {top:15%}
+    50% {top:40%}
+    100% {top:15%}
+}
+
+.dimmed{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10;background:#000;opacity:0.6;filter:alpha(opacity=60)}
+.dim{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10;background:#000;opacity:0.6;filter:alpha(opacity=60)}

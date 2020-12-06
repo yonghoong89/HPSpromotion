@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#event__wrapper{overflow:hidden;position:relative;max-width:640px;margin:0 auto;background:#000}
+#event__wrapper img{display:block;width:100%}
+#event__wrapper .box__inner{position:relative}
+
+.anchor__navigation a{position:absolute;top:0;height:100%}
+.anchor__navigation .anchor__navigation1{width:30%;left:0}
+.anchor__navigation .anchor__navigation2{width:15%;left:30%}
+.anchor__navigation .anchor__navigation3{width:18%;left:45%}
+.anchor__navigation .anchor__navigation4{width:21%;left:63%}
+.anchor__navigation .anchor__navigation5{width:16%;right:0}
+
+.box__event1,
+.box__event2,
+.box__event3,
+.box__event4{position:relative}
+.box__event1 .link__coupon {position:absolute;width:16%;height:8%}
+.box__event1 .list__coupon1{left:78%;top:26%}
+.box__event1 .list__coupon2{left:78%;top:43%}
+.box__event1 .list__coupon3{left:78%;top:60%}
+.box__event1 .list__coupon4{left:78%;top:78%}
+
+.button__notice{position:absolute;width:50%;left:24%}
+.box__event1 .button__notice{height:6%;top:91%}
+.box__event2 .button__notice{height:15%;top:82%}
+.box__event3 .button__notice{height:8%;top:88%}
+.box__event4 .button__apply{position:absolute;width:56%;left:22%;height:11%;top:64%}
+.box__event4 .button__notice{height:10%;top:77%}
+
+.box__event-layer{display:none;position:absolute;right:0;left:0;z-index:100;transform: translateZ(1px)}
+.box__event-layer .button__close-layer{position:absolute;width:100%;height:100%;left:0;top:0;text-indent:-9999px;border:0}
+.dim{display:block;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10;background:#000;opacity:0.9;filter:alpha(opacity=90)}
+#pop1{top:80%}
+#pop2{top:72%}
+#pop3{top:60%}
+#pop4{top:63%}
+#pop5{top:76%}
+
+.link__buying{position:absolute;width:35%;height:2.5%}
+.box__lactofit{position:relative}
+.box__lactofit .link__lactofit1{width:56%;height:4%;left:22%;top:47%}
+.box__lactofit .link__lactofit2{left:9%;top:70%}
+.box__lactofit .link__lactofit3{left:56%;top:70%}
+.box__lactofit .link__lactofit4{left:9%;top:91%}
+.box__lactofit .link__more{position:absolute;width:43%;height:17%;left:52%;top:77%}
+
+.box__promega{position:relative}
+.box__promega .link__promega1{width:56%;height:4%;left:22%;top:58%}
+.box__promega .link__promega2{left:9%;top:85.5%}
+.box__promega .link__promega3{left:56%;top:85.5%}
+.box__promega .link__more{position:absolute;width:65%;height:4%;left:16%;top:91%}
+
+.box__eyeclear{position:relative}
+.box__eyeclear .link__eyeclear{position:absolute;width:56%;height:6%;left:22%;top:78%}
+.box__eyeclear .link__more{position:absolute;width:65%;height:5%;left:16%;top:88%}
+
+.box__allatme{position:relative}
+.box__allatme .link__allatme{position:absolute;width:56%;height:6%;left:22%;top:72%}
+.box__allatme .link__more{position:absolute;width:65%;height:5%;left:16%;top:81%}
+
+/*sns응모하기*/
+.box__event4 .box__event-layer .box__sns-event .text__user{position:absolute;top:19%;left:28%;color:#fff;font-size:13px;line-height:18px}
+.box__event4 .box__event-layer .box__sns-event .form__url{position:absolute;top:31%;left:28%;width:62%;color:#fff;font-size:13px;line-height:18px;background:none;border:0}
+.box__event4 .box__event-layer .box__sns-event .button__sns-submit{position:absolute;top:90%;left:30%;width:40%;height:10%;background:#fff}
+#pop4 .button__close-layer{position:absolute;width:15%;height:16%;left:84%;top:0;text-indent:-9999px;border:0}
+
+
+@media screen and (min-width:640px){
+    .box__event4 .box__event-layer .box__sns-event .text__user{top:20%;font-size:19px;line-height:21px}
+    .box__event4 .box__event-layer .box__sns-event .form__url{top:32%;color:#fff;font-size:19px;line-height:21px;background:none;border:0}
+}
