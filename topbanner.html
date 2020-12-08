@@ -110,11 +110,11 @@
 	<div class="section__option">
 		<div class="box__option">
 			<span class="text__option-title">컬러</span>
-			<input type="text" class="form__text" id="background-color" placeholder="#0066cc"><button type="button" class="button__apply">적용</button>
+			<input type="text" class="form__text" id="backgroundColor" placeholder="#0066cc"><button type="button" class="button__apply">적용</button>
 		</div>
 		<div class="box__option">
 			<span class="text__option-title">이미지 url</span>
-			<input type="text" class="form__text" id="background-image" placeholder="크기 : 1200 x 400"><button type="button" class="button__apply">적용</button>
+			<input type="text" class="form__text" id="backgroundImage" placeholder="크기 : 1200 x 400"><button type="button" class="button__apply">적용</button>
 		</div>
 	</div>
 	<p class="text__guide-title">- 배경딤드</p>
@@ -174,10 +174,10 @@ $('.button__apply').on('click', function(){
 		case 'event-date-color': 
 			$('.text__event-date').css('color',inputValue)
 		break;
-		case 'background-color': 
-			$('.section__banner').css('color',inputValue)
+		case 'backgroundColor': 
+			$('.section__banner').css('background-color',inputValue)
 		break;
-		case 'background-image': 
+		case 'backgroundImage': 
 		console.log('test')
 			$('.box__background').css({"background-image":"url(" + inputValue + ")"})
 		break;
