@@ -65,26 +65,64 @@
 <script type="text/javascript" src="https://www.homeplus.co.kr/GHS/mart/common/scripts/jquery-1.10.2.min.js"></script>
 <div class="box__guide">
 	* 마크업확인 가이드 소스 입니다.(개발시 제거)
-	<p class="text__guide-title">1. 배경 컬러코드(ex :#0066cc)</p>
-	<div class="box__option">
-		<input type="text" class="form__text" id="background-color"><button type="button" class="button__apply">적용</button>
+	<p class="text__guide-title">- 타이틀 첫번째 줄</p>
+	<div class="section__option">
+		<div class="box__option">
+			<span class="text__option-title">텍스트</span>
+			<input type="text" class="form__text" id="title-line1" placeholder="최대 10자"><button type="button" class="button__apply">적용</button>
+		</div>
+		<div class="box__option">
+			<span class="text__option-title">컬러</span>
+			<input type="text" class="form__text" id="title-line1-color" placeholder="#0066cc"><button type="button" class="button__apply">적용</button>
+		</div>
 	</div>
-	<p class="text__guide-title">2. 타이틀정렬</p>
-	<div class="box__option">
-		<a href="#type1" class="button__guide">왼쪽</a>
-		<a href="#type2" class="button__guide">오른쪽</a>
-		<a href="#type3" class="button__guide">가운데</a>
+	<p class="text__guide-title">- 타이틀 두번째 줄</p>
+	<div class="section__option">
+		<div class="box__option">
+			<span class="text__option-title">텍스트</span>
+			<input type="text" class="form__text" id="title-line2" placeholder="최대 10자"><button type="button" class="button__apply">적용</button>
+		</div>
+		<div class="box__option">
+			<span class="text__option-title">컬러</span>
+			<input type="text" class="form__text" id="title-line2-color" placeholder="#0066cc"><button type="button" class="button__apply">적용</button>
+		</div>
 	</div>
-	<p class="text__guide-title">3. 타이틀 컬러코드(ex :#0066cc)</p>
-	<div class="box__option">
-		<input type="text" class="form__text" id="title-color"><button type="button" class="button__apply">적용</button>
+	<p class="text__guide-title">- 이벤트 기간 입력</p>
+	<div class="section__option">
+		<div class="box__option">
+			<span class="text__option-title">텍스트</span>
+			<input type="text" class="form__text" id="event-date" placeholder="최대 10자"><button type="button" class="button__apply">적용</button>
+		</div>
+		<div class="box__option">
+			<span class="text__option-title">컬러</span>
+			<input type="text" class="form__text" id="event-date-color" placeholder="#0066cc"><button type="button" class="button__apply">적용</button>
+		</div>
 	</div>
-	<p class="text__guide-title">4. 딤드</p>
-	<div class="box__option">
+	<p class="text__guide-title">- 타이틀 정렬</p>
+	<div class="section__option">
+		<div class="box__option">
+			<a href="#type1" class="button__guide">왼쪽</a>
+			<a href="#type2" class="button__guide">오른쪽</a>
+			<a href="#type3" class="button__guide">가운데</a>
+		</div>
+	</div>
+	<p class="text__guide-title">- 배경</p>
+	<div class="section__option">
+		<div class="box__option">
+			<span class="text__option-title">컬러</span>
+			<input type="text" class="form__text" id="background-color" placeholder="#0066cc"><button type="button" class="button__apply">적용</button>
+		</div>
+		<div class="box__option">
+			<span class="text__option-title">이미지 url</span>
+			<input type="text" class="form__text" id="background-image" placeholder="크기 : 1200 x 400"><button type="button" class="button__apply">적용</button>
+		</div>
+	</div>
+	<p class="text__guide-title">- 배경딤드</p>
+	<div class="section__option">
 		<a href="#type4" class="button__guide">적용/미적용</a>
 	</div>
-	<p class="text__guide-title">5. 배경블러효과</p>
-	<div class="box__option">
+	<p class="text__guide-title">- 배경블러</p>
+	<div class="section__option">
 		<a href="#type5" class="button__guide">적용/미적용</a>
 	</div>
 </div>
@@ -112,12 +150,46 @@ $('.button__guide').on('click', function(){
 });
 
 $('.button__apply').on('click', function(){
-	var colorCode = $(this).prev().val()
-	if($(this).prev().is('#background-color')){
-		$('.section__banner').css('background-color',colorCode)
-	}else if($(this).prev().is('#title-color')){
-		$('.box__information').css('color',colorCode)
+	var inputEl = $(this).prev()
+	var inputType = $(this).prev().attr('id')
+	var inputValue = $(this).prev().val()
+	console.log(inputType)
+
+	switch(inputType){
+		case 'title-line1':
+			$('.text__banner-title .text__title:eq(0)').text(inputValue)
+		break;
+		case 'title-line1-color':
+			$('.text__banner-title .text__title:eq(0)').css('color',inputValue)
+		break;
+		case 'title-line2': 
+			$('.text__banner-title .text__title:eq(1)').text(inputValue)
+		break;
+		case 'title-line2-color': 
+			$('.text__banner-title .text__title:eq(1)').css('color',inputValue)
+		break;
+		case 'event-date': 
+			$('.text__event-date').text(inputValue)
+		break;
+		case 'event-date-color': 
+			$('.text__event-date').css('color',inputValue)
+		break;
+		case 'background-color': 
+			$('.section__banner').css('color',inputValue)
+		break;
+		case 'background-image': 
+		console.log('test')
+			$('.box__background').css({"background-image":"url(" + inputValue + ")"})
+		break;
 	}
+	return false;
+
+
+	// if($(this).prev().is('#background-color')){
+	// 	$('.section__banner').css('background-color',colorCode)
+	// }else if($(this).prev().is('#title-color')){
+	// 	$('.box__information').css('color',colorCode)
+	// }
 	
 	return false;
 });
