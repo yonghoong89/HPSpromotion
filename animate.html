@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>홈플러스 배너모듈</title>	       
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.homeplus.co.kr/GHS/mart/common/css/common.css">
+<link rel="stylesheet" href="https://www.homeplus.co.kr/GHS/mart/common/css/layout.css">
+<link rel="stylesheet" href="https://www.homeplus.co.kr/GHS/mart/common/css/exhibition.css">
+<link rel="stylesheet" href="https://www.homeplus.co.kr/GHS/mart/common/css/event.css">
+<link rel="stylesheet" href="animate.min.css">
+<style>
+	.section__animate{padding:100px}
+	.box__icon{width:80px;height:80px;background-color:#0066cc;margin:0 auto;color:#fff;text-align:center;line-height:80px;}
+	.box__text{font-size:24px;text-align:center;}
+	.box__test + .box__test{margin-top:50px}
+	.section__event{position:fixed;top:0;right:0;width:200px;background-color:#ccc;}
+	.animation-group{padding:10px}
+	.animation-group li + li{margin-top:10px;}
+	.animation-group li{display:block;font-size:16px;font-weight:bold;cursor:pointer;}
+</style>
+</head>
+<body>
+	<div class="section__animate">
+		<div class="box__test box__icon">test icon</div>
+		<div class="box__test box__text">test text</div>
+	</div>
+
+	<div class="section__event">
+		<ul class="animation-group">
+			<li class="animation-item" data-animation="bounce">
+				<span class="animation-item--title">bounce</span>
+			</li>
+		
+			<li class="animation-item" data-animation="flash">
+				<span class="animation-item--title">flash</span>
+			</li>
+		
+			<li class="animation-item" data-animation="pulse">
+				<span class="animation-item--title">pulse</span>
+			</li>
+		
+			<li class="animation-item" data-animation="rubberBand">
+				<span class="animation-item--title">rubberBand</span>
+			</li>
+		
+			<li class="animation-item" data-animation="shakeX">
+				<span class="animation-item--title">shakeX</span>
+			</li>
+		
+			<li class="animation-item" data-animation="shakeY">
+				<span class="animation-item--title">shakeY</span>
+			</li>
+		
+			<li class="animation-item" data-animation="headShake">
+				<span class="animation-item--title">headShake</span>
+			</li>
+		
+			<li class="animation-item" data-animation="swing">
+				<span class="animation-item--title">swing</span>
+			</li>
+		
+			<li class="animation-item" data-animation="tada">
+				<span class="animation-item--title">tada</span>
+			</li>
+		
+			<li class="animation-item" data-animation="wobble">
+				<span class="animation-item--title">wobble</span>
+			</li>
+		
+			<li class="animation-item" data-animation="jello">
+				<span class="animation-item--title">jello</span>
+			</li>
+		
+			<li class="animation-item" data-animation="heartBeat">
+				<span class="animation-item--title">heartBeat</span>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="https://www.homeplus.co.kr/GHS/mart/common/scripts/jquery-1.10.2.min.js"></script>
+	<script>
+		$('.animation-group li').stop().on('click' ,function(){
+			var caseType = $(this).attr('data-animation');
+			var caseClass = 'animate__' + caseType
+
+			$('.box__test').addClass('animate__animated').addClass(caseClass)
+			setTimeout(function(){
+				reset(caseClass)
+			},1000)
+		});
+
+		function reset(caseClass){
+			$('.box__test').removeClass('animate__animated')
+			$('.box__test').removeClass(caseClass)
+		}
+	</script>
+</body>
+</html>
